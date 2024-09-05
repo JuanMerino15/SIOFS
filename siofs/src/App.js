@@ -34,7 +34,7 @@ function App() {
               Somos una comunidad de laicos comprometidos con vivir el Evangelio 
               según el ejemplo de San Francisco de Asís. Nuestra misión es fomentar 
               la paz, la justicia y el cuidado de la creación, sirviendo a los 
-              necesitados y construyendo una fraternidad de amor y servicio.
+              necesitados y construyendo una fraternidad de amor y servicio.:ja
             </p>
             <p>
               Este sistema integral está diseñado para facilitar la gestión y 
