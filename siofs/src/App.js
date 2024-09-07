@@ -27,7 +27,10 @@ function App() {
       </aside>
 
       <main className="content">
+      <h1>INICIO</h1>
+      <h3>HERMANOS SEGLARES</h3>
         <section className="welcome-container">
+          
           <div className="welcome">
             <h1>Paz y Bien</h1>
             <p>

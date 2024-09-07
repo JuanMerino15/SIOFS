@@ -1,20 +1,28 @@
-body {
+/* Asegurar que el body y el html ocupen todo el viewport */
+html, body {
+  height: 100%;
   font-family: 'Arial', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Asegurar que la app ocupe todo el alto y ancho */
 .App {
   display: flex;
+  height: 100vh; /* Full viewport height */
 }
 
+/* Sidebar ocupa todo el alto disponible */
 .sidebar {
   width: 250px;
   background-color: #f7f7f7;
   padding: 20px;
+  height: 100%; /* Ocupa todo el alto */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Separa el contenido y el botón de cerrar sesión */
 }
-
 .profile {
   text-align: center;
 }
@@ -54,14 +62,37 @@ nav ul li a {
   color: #d9534f;
 }
 
+/* Content ocupa todo el espacio restante */
 .content {
   flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribuye el contenido de arriba a abajo */
+  text-align: left;
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
 }
 
 .welcome {
-  background-color: #f0f0f0;
-  padding: 20px;
+  max-width: 600px;
+  text-align: left;
+  background-color: #f5f4f1;
+  padding: 20px; /* Añadir algo de relleno para que el texto no esté pegado a los bordes */
+  border-radius: 54px; /* Bordes redondeados */
+}
+.image-container {
+  flex-shrink: 0;
+}
+
+.right-image {
+  width: 300px;
+  height: auto;
   border-radius: 10px;
 }
 
@@ -75,44 +106,32 @@ nav ul li a {
 }
 
 .features {
-  margin-top: 30px;
+  text-align: center;
+  background-color: #f5f4f1;
+  padding: 20px; /* Añadir algo de relleno para que el texto no esté pegado a los bordes */
+  border-radius: 54px; /* Bordes redondeados */
 }
 
+/* Ajustar los botones para que se vean en dos columnas */
 .feature-buttons {
-  display: flex;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  gap: 20px;
+  width: 100%; /* Ocupa todo el ancho */
+  margin-top: 30px;
 }
 
 .feature-buttons button {
   background-color: #b47c5c;
   color: white;
-  padding: 10px 15px;
+  padding: 20px 40px;
+  font-size: 18px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   cursor: pointer;
+  width: 100%; /* Botones ocupan toda la columna */
 }
 
 .feature-buttons button:hover {
   background-color: #a05f3b;
-}
-.welcome-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-}
-
-.welcome {
-  max-width: 600px;
-  text-align: left;
-}
-
-.image-container {
-  flex-shrink: 0;
-}
-
-.right-image {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
 }
