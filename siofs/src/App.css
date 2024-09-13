@@ -1,40 +1,76 @@
-/* Asegurar que el body y el html ocupen todo el viewport */
+
 html, body {
   height: 100%;
-  font-family: 'Arial', sans-serif;
+  font-family: 'Jost', sans-serif; 
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Asegurar que la app ocupe todo el alto y ancho */
-.App {
-  display: flex;
-  height: 100vh; /* Full viewport height */
+h1 {
+  color: #4D1F0F;
+  font-weight: 700; 
+  line-height: 150%;
+}
+h2 {
+  color: #4D1F0F;
+  font-weight: 700; 
+  line-height: 150%;
+}
+h3 {
+  color: #454545;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
 
-/* Sidebar ocupa todo el alto disponible */
+p, li, a {
+  font-weight: 400; 
+}
+
+.paz-bien {
+  color: #4D1F0F;
+  text-align: center;
+}
+
+
+
+.App {
+  display: flex;
+  height: 100vh; 
+}
+
+
 .sidebar {
   width: 250px;
   background-color: #f7f7f7;
   padding: 20px;
-  height: 100%; /* Ocupa todo el alto */
+  height: 95%; 
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Separa el contenido y el botón de cerrar sesión */
-}
+  justify-content: space-between; 
 .profile {
   text-align: center;
+}
 }
 
 .profile-pic {
   width: 80px;
   height: 80px;
-  background-color: #ddd;
   border-radius: 50%;
-  margin: 0 auto;
+  overflow: hidden; 
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
 }
 
+.icon {
+  width: 100%; 
+  height: auto;
+}
 .role {
   color: green;
 }
@@ -44,9 +80,17 @@ nav ul {
   padding: 0;
 }
 
-nav ul li {
-  margin: 20px 0;
+ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
+
+ul li i {
+  margin-right: 30px; 
+  color: #333;
+}
+
 
 nav ul li a {
   text-decoration: none;
@@ -54,21 +98,23 @@ nav ul li a {
 }
 
 .logout {
-  margin-top: 20px;
+  margin-bottom: 80px;
+  
 }
 
 .logout a {
+  
   text-decoration: none;
   color: #d9534f;
 }
 
-/* Content ocupa todo el espacio restante */
+
 .content {
   flex: 1;
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; /* Distribuye el contenido de arriba a abajo */
+  justify-content: space-between; 
   text-align: left;
 }
 
@@ -83,9 +129,16 @@ nav ul li a {
   max-width: 600px;
   text-align: left;
   background-color: #f5f4f1;
-  padding: 20px; /* Añadir algo de relleno para que el texto no esté pegado a los bordes */
-  border-radius: 54px; /* Bordes redondeados */
+  padding: 20px; 
+  border-radius: 54px; 
 }
+
+.welcome h1{
+  text-align: center;
+  font-size: 32px;
+  font-family: 'Jost-medium', sans-serif; 
+}
+
 .image-container {
   flex-shrink: 0;
 }
@@ -108,30 +161,42 @@ nav ul li a {
 .features {
   text-align: center;
   background-color: #f5f4f1;
-  padding: 20px; /* Añadir algo de relleno para que el texto no esté pegado a los bordes */
-  border-radius: 54px; /* Bordes redondeados */
+  padding: 20px; 
+  border-radius: 54px; 
+}
+.features h1{
+  font-size: 32px;
+  font-family: 'Jost-medium', sans-serif; 
 }
 
-/* Ajustar los botones para que se vean en dos columnas */
+
 .feature-buttons {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Dos columnas de igual tamaño */
+  grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
-  width: 100%; /* Ocupa todo el ancho */
+  width: 100%; 
   margin-top: 30px;
 }
 
 .feature-buttons button {
-  background-color: #b47c5c;
+  background-color: #997164;
   color: white;
   padding: 20px 40px;
   font-size: 18px;
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  width: 100%; /* Botones ocupan toda la columna */
+  width: 100%; 
 }
 
 .feature-buttons button:hover {
   background-color: #a05f3b;
+}
+
+.logo {
+  position: absolute;
+  right: 20px;  
+  top: 20px;
+  width: 100px;
+  height: auto;
 }

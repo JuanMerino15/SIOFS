@@ -1,38 +1,43 @@
 import React from 'react';
 import './App.css';
 
+
 function App() {
   return (
     <div className="App">
 
       <aside className="sidebar">
         <div className="profile">
-          <div className="profile-pic"></div>
+          <div className="profile-pic">
+            <img src="/images/icono_admin.png" className="icon" alt="Icono de usuario" />
+          </div>
           <h3>User Name</h3>
           <p className="role">Ministro</p>
         </div>
         <nav>
-          <ul>
-            <li><a href="#inicio">Inicio</a></li>
-            <li><a href="#administracion">Administración</a></li>
-            <li><a href="#economia">Economía</a></li>
-            <li><a href="#estructura-ofs">Estructura OFS</a></li>
-            <li><a href="#accesos">Accesos</a></li>
-            <li><a href="#reportes">Reportes</a></li>
-          </ul>
+        <ul>
+          <li><a href="#inicio"><i class="fa-regular fa-house"></i> Inicio</a></li>
+          <li><a href="#administracion"><i className="fas fa-cog"></i> Administración</a></li>
+          <li><a href="#economia"><i className="fas fa-chart-line"></i> Economía</a></li>
+          <li><a href="#estructura-ofs"><i className="fas fa-sitemap"></i> Estructura OFS</a></li>
+          <li><a href="#accesos"><i className="fas fa-key"></i> Accesos</a></li>
+          <li><a href="#reportes"><i className="fas fa-file-alt"></i> Reportes</a></li>
+        </ul>
         </nav>
         <div className="logout">
-          <a href="#cerrar-sesion">Cerrar Sesión</a>
+          <a href="#cerrar-sesion"><i className="cerrar sesion"></i> Cerrar Sesión</a>
         </div>
       </aside>
 
       <main className="content">
-      <h1>INICIO</h1>
-      <h3>HERMANOS SEGLARES</h3>
+        <header className="header">
+          <h1>INICIO</h1>
+          <img src="/images/logo.png" alt="Logo" className="logo" />
+        </header>
+        <h3>HERMANOS SEGLARES</h3>
         <section className="welcome-container">
-          
           <div className="welcome">
-            <h1>Paz y Bien</h1>
+            <h1>PAZ Y BIEN</h1>
             <p>
               Somos una comunidad de laicos comprometidos con vivir el Evangelio 
               según el ejemplo de San Francisco de Asís. Nuestra misión es fomentar 
@@ -51,7 +56,7 @@ function App() {
         </section>
 
         <section className="features">
-          <h2>Con el sistema podrás:</h2>
+          <h1>CON EL SISTEMA PODRÁS:</h1>
           <div className="feature-buttons">
             <button>Llevar el control del hermano seglar</button>
             <button>Gestionar las asistencias</button>
