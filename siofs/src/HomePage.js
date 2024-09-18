@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
+import { Link } from 'react-router-dom';
+import './Styles/HomePage.css';
 
-
-function App() {
+function HomePage() {
   return (
-    <div className="App">
+    <div className="HomePage">
 
       <aside className="sidebar">
         <div className="profile">
@@ -17,7 +17,7 @@ function App() {
         <nav>
         <ul>
           <li><a href="#inicio"><i class="fa-regular fa-house"></i> Inicio</a></li>
-          <li><a href="#administracion"><i className="fas fa-cog"></i> Administración</a></li>
+          <li><Link to="/Administracion/Hermanos/Historial_Etapa">Administración</Link></li>
           <li><a href="#economia"><i className="fas fa-chart-line"></i> Economía</a></li>
           <li><a href="#estructura-ofs"><i className="fas fa-sitemap"></i> Estructura OFS</a></li>
           <li><a href="#accesos"><i className="fas fa-key"></i> Accesos</a></li>
@@ -70,4 +70,4 @@ function App() {
   );
 }
 
-export default App;
+export default HomePage;
