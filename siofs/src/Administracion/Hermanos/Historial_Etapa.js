@@ -18,7 +18,7 @@ function HistorialEtapas() {
           <ul>
             <li><a href="#inicio"><i className="fa-regular fa-house"></i> Inicio</a></li>
             <li><Link to="/Administracion/Hermanos/Historial_Etapa">Administración</Link></li>
-            <li><a href="#economia"><i className="fas fa-chart-line"></i> Economía</a></li>
+            <li><Link to="/Administracion/Hermanos/submenu_HS"> Economía</Link></li>
             <li><a href="#estructura-ofs"><i className="fas fa-sitemap"></i> Estructura OFS</a></li>
             <li><a href="#accesos"><i className="fas fa-key"></i> Accesos</a></li>
             <li><a href="#reportes"><i className="fas fa-file-alt"></i> Reportes</a></li>
