@@ -19,6 +19,16 @@ function HistorialEtapas() {
           <p className="role">Secretario</p>
         </div>
         <nav>
+
+          <ul>
+            <li><a href="#inicio"><i className="fa-regular fa-house"></i> Inicio</a></li>
+            <li><Link to="/Administracion/Hermanos/Historial_Etapa">Administración</Link></li>
+            <li><Link to="/Administracion/Hermanos/submenu_HS"> Economía</Link></li>
+            <li><a href="#estructura-ofs"><i className="fas fa-sitemap"></i> Estructura OFS</a></li>
+            <li><a href="#accesos"><i className="fas fa-key"></i> Accesos</a></li>
+            <li><a href="#reportes"><i className="fas fa-file-alt"></i> Reportes</a></li>
+          </ul>
+
         <ul>
    <li>
       <Link to="/">
@@ -51,6 +61,7 @@ function HistorialEtapas() {
     </Link>
   </li>
 </ul>
+
         </nav>
         <div className="logout">
           <a href="#cerrar-sesion"><i className="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
