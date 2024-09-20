@@ -7,27 +7,17 @@ html, body {
   box-sizing: border-box;
 }
 
-h1 {
-  color: #4D1F0F;
-  font-weight: 700; 
-  line-height: 150%;
-}
-h2 {
-  color: #4D1F0F;
-  font-weight: 700; 
-  line-height: 150%;
-}
-h3 {
-  color: #454545;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 150%;
+
+.title {
+  flex-grow: 1;
+  text-align: center;
 }
 
-p, li, a {
-  font-weight: 400; 
+.title h1,
+.title p {
+  margin: 0;
 }
+
 
 .paz-bien {
   color: #4D1F0F;
@@ -38,21 +28,31 @@ p, li, a {
 
 .HomePage {
   display: flex;
-  height: 100vh; 
+  height: 100vh;
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  overflow: hidden; /* Evita desbordamiento en la página */
 }
-
 
 .sidebar {
-  width: 250px;
-  background-color: #f7f7f7;
-  padding: 20px;
-  height: 95%; 
+  width: 220px; 
+  height: 100%; 
+  background: #FAFAFA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  position: fixed; 
+  top: 0;
+  left: 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-.profile {
-  text-align: center;
-}
+  justify-content: space-between;
+  padding: 20px;
+
+
+
+  .profile {
+    text-align: center;
+    margin-bottom: 30px; /* Agrega un margen entre el perfil y el contenido */
+  }
 }
 
 .profile-pic {
@@ -67,7 +67,7 @@ p, li, a {
   background-color: #ddd;
 }
 
-.icon {
+.iconA{
   width: 100%; 
   height: auto;
 }
@@ -104,47 +104,56 @@ nav ul li a {
 
 .logout a {
   
-  text-decoration: none;
-  color: #d9534f;
+  width: 18.75px;
+  height: 18px;
+  left: 21.02px;
+  top: 21.11px;
+  
+  transform: rotate(-179.7deg);
 }
 
 
 .content {
-  flex: 1;
+  
+  margin-left: 270px; 
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; 
-  text-align: left;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 270px); /* Asegura que el contenido use el resto del espacio */
 }
 
 .welcome-container {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
-  padding: 20px;
 }
-
 .welcome {
   max-width: 600px;
   text-align: left;
   background-color: #f5f4f1;
-  padding: 20px; 
-  border-radius: 54px; 
+  padding: 20px;
+  border-radius: 54px;
+  margin-left: 40px; 
+  margin-bottom: 50px;
 }
-
 .welcome h1{
   text-align: center;
   font-size: 32px;
   font-family: 'Jost-medium', sans-serif; 
+  text-align: center;
 }
 
 .image-container {
   flex-shrink: 0;
+  align-self: flex-end; /* Asegura que la imagen se alinee al final del eje */
+  margin-left: 150px; 
+  margin-bottom: 50px;
 }
 
 .right-image {
-  width: 300px;
+  width: 350px;
   height: auto;
   border-radius: 10px;
 }
@@ -157,25 +166,28 @@ nav ul li a {
   width: 100%;
   border-radius: 10px;
 }
-
 .features {
   text-align: center;
   background-color: #f5f4f1;
   padding: 20px; 
-  border-radius: 54px; 
+  border-radius: 54px;
+  margin-top: -50px; /* Eleva el contenedor */
+  width: 80%; /* Aumenta el ancho */
+  margin-left: auto; /* Alinea horizontalmente */
+  margin-right: auto; /* Centra horizontalmente */
 }
-.features h1{
-  font-size: 32px;
-  font-family: 'Jost-medium', sans-serif; 
-}
-
 
 .feature-buttons {
   display: grid;
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
   width: 100%; 
-  margin-top: 30px;
+  
+}
+.features h1{
+  font-size: 32px;
+  font-family: 'Jost-medium', sans-serif; 
+  text-align: center;
 }
 
 .feature-buttons button {
@@ -184,7 +196,7 @@ nav ul li a {
   padding: 20px 40px;
   font-size: 18px;
   border: none;
-  border-radius: 10px;
+  border-radius: 54px;
   cursor: pointer;
   width: 100%; 
 }
@@ -199,4 +211,11 @@ nav ul li a {
   top: 20px;
   width: 100px;
   height: auto;
+}
+
+.icon {
+  width: 20px; 
+  height: 20px;
+  margin-right: 10px; /* Espacio entre el ícono y el texto */
+  vertical-align: middle;
 }

@@ -1,0 +1,243 @@
+.DatosEtapas {
+    display: flex;
+    height: 100vh;
+    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    overflow: hidden; /* Evita desbordamiento en la página */
+  }
+  
+  .profile-pic2 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden; 
+    margin: 0 auto; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+  }
+
+  .profile-pic2 h3{
+    text-align: center;
+  }
+  
+  
+  .sidebar2 {
+    width: 220px; 
+    height: 100%; 
+    background: #FAFAFA;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    position: fixed; /* Mantén el sidebar fijo en el lado izquierdo */
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+  
+  
+  
+    .profile2 {
+      text-align: center;
+      margin-bottom: 30px; /* Agrega un margen entre el perfil y el contenido */
+    }
+  }
+  
+nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  ul li {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  ul li i {
+    margin-right: 30px; 
+    color: #333;
+  }
+  
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .logout {
+    margin-bottom: 80px;
+    
+  }
+  
+  .logout a {
+    
+    width: 18.75px;
+    height: 18px;
+    left: 21.02px;
+    top: 21.11px;
+    
+    transform: rotate(-179.7deg);
+  }
+  
+  
+  /* Content styles */
+  .content2 {
+    margin-left: 270px; 
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: calc(100% - 270px); /* Asegura que el contenido use el resto del espacio */
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .user {
+    display: flex;
+    align-items: center; 
+  
+  }
+  
+  .user-icon {
+    margin-right: 10px;
+  }
+  
+  .user-icon i {
+    font-size: 2em;
+  }
+  
+  .title {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .title h1,
+  .title p {
+    margin: 0;
+  }
+  
+ 
+.logo2 {
+    position: absolute;
+    right: 20px;  
+    top: 20px;
+    width: 100px;
+    height: auto;
+  }
+  
+  .main-content {
+    margin-bottom: 20px;
+  }
+  
+  .card {
+    text-align: center;
+    background-color: #f5f4f1;
+    padding: 20px; 
+    border-radius: 54px; 
+    margin-top: 50px; /* Eleva el contenedor */
+    width: 600px; /* Aumenta el ancho */
+    margin-left: 180px; /* Alinea horizontalmente */
+    margin-right: auto; /* Centra horizontalmente */
+  }
+  
+  .card h2 {
+    margin-bottom: 10px;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+  }
+  
+  .col {
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .col:last-child {
+    margin-right: 0;
+  }
+  
+  .col label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .input-group {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-group input {
+    width: 100%;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .input-group i {
+    position: absolute;
+    right: 10px;
+    color: #ccc;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .input-group i:hover {
+    color: #000;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 200px;
+    margin-left: 450px;
+    width: 155px;
+    height: 50px;
+  }
+  
+  .buttons button {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 20px;
+    
+  }
+  
+  .guardar {
+    background-color: #74B22C;
+    color: white;
+  }
+  
+  .cancelar {
+    background-color: #4D1F0F;
+    color: #FFFFFF;
+    
+  }
+  
+  .buttons button:hover {
+    opacity: 0.
+  }
+
+  .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px; /* Espacio entre el ícono y el texto */
+    vertical-align: middle;
+  }
+
+  .iconA2{
+    width: 100%; 
+    height: auto;
+  }
