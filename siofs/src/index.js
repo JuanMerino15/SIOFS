@@ -5,6 +5,7 @@ import HomePage from './HomePage';
 import HistorialEtapas from './Administracion/Hermanos/Historial_Etapa';
 import Submenuhs from './Administracion/Hermanos/submenu_HS';
 import reportWebVitals from './reportWebVitals';
+import Datos_Etapas from './Administracion/Hermanos/Datos_Etapas';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -12,8 +13,13 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+
         <Route path="/Administracion/Hermanos/Historial_Etapa" element={<HistorialEtapas />} />
         <Route path="/Administracion/Hermanos/submenu_HS" element={<Submenuhs />} />
+        <Route path="/Administracion/Hermanos/Historial_Etapa" 
+ element={<HistorialEtapas />} />
+        <Route path="/Administracion/Hermanos/Datos_Etapas" 
+ element={<Datos_Etapas />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -9,13 +9,14 @@ function HomePage() {
       <aside className="sidebar">
         <div className="profile">
           <div className="profile-pic">
-            <img src="/images/icono_admin.png" className="icon" alt="Icono de usuario" />
+            <img src="/images/icono_admin.png" className="iconA" alt="Icono de usuario" />
           </div>
           <h3>User Name</h3>
           <p className="role">Ministro</p>
         </div>
         <nav>
         <ul>
+
           <li><a href="#inicio"><i class="fa-regular fa-house"></i> Inicio</a></li>
           <li><Link to="/Administracion/Hermanos/Historial_Etapa">Administración</Link></li>
           <li><Link to="/Administracion/Hermanos/submenu_HS"> Economía</Link></li>
@@ -23,6 +24,39 @@ function HomePage() {
           <li><a href="#accesos"><i className="fas fa-key"></i> Accesos</a></li>
           <li><a href="#reportes"><i className="fas fa-file-alt"></i> Reportes</a></li>
         </ul>
+
+   <li>
+      <Link to="/">
+      <img src="/images/IconoHome.png" alt="Inicio" className="icon" /> Inicio
+      </Link>
+    </li>
+   <li>
+      <Link to="/Administracion/Hermanos/Historial_Etapa">
+      <img src="/images/IconoAdministracion.png" alt="Administración" className="icon" /> Administración
+     </Link>
+  </li>
+  <li>
+      <Link to="/Economia">
+      <img src="/images/IconoEconomia.png" alt="Economía" className="icon" /> Economía
+     </Link>
+  </li>
+  <li>
+     <Link to="/EstructuraOFS">
+      <img src="/images/IconoEstructuraOFS.png" alt="Estructura OFS" className="icon" /> Estructura OFS
+      </Link>
+   </li>
+  <li>
+      <Link to="/Accesos">
+      <img src="/images/IconoAccesos.png" alt="Accesos" className="icon" /> Accesos
+      </Link>
+  </li>
+  <li>
+    <Link to="/Reportes">
+      <img src="/images/IconoReportes.png" alt="Reportes" className="icon" /> Reportes
+    </Link>
+  </li>
+</ul>
+
         </nav>
         <div className="logout">
           <a href="#cerrar-sesion"><i className="cerrar sesion"></i> Cerrar Sesión</a>
