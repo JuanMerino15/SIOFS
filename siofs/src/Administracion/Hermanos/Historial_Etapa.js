@@ -19,6 +19,9 @@ function HistorialEtapas() {
           <p className="role">Secretario</p>
         </div>
         <nav>
+
+
+
         <ul>
    <li>
       <Link to="/">
