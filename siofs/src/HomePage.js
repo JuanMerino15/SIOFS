@@ -16,6 +16,7 @@ function HomePage() {
         </div>
         <nav>
 
+
           <ul>
             <li>
               <Link to="/">
@@ -48,6 +49,49 @@ function HomePage() {
               </Link>
             </li>
           </ul>
+
+        <ul>
+
+          <li><a href="#inicio"><i class="fa-regular fa-house"></i> Inicio</a></li>
+          <li><Link to="/Administracion/Hermanos/Historial_Etapa">Administración</Link></li>
+          <li><Link to="/Administracion/Hermanos/submenu_HS"> Economía</Link></li>
+          <li><a href="#estructura-ofs"><i className="fas fa-sitemap"></i> Estructura OFS</a></li>
+          <li><a href="#accesos"><i className="fas fa-key"></i> Accesos</a></li>
+          <li><a href="#reportes"><i className="fas fa-file-alt"></i> Reportes</a></li>
+        </ul>
+
+   <li>
+      <Link to="/">
+      <img src="/images/IconoHome.png" alt="Inicio" className="icon" /> Inicio
+      </Link>
+    </li>
+   <li>
+      <Link to="/Administracion/Hermanos/Historial_Etapa">
+      <img src="/images/IconoAdministracion.png" alt="Administración" className="icon" /> Administración
+     </Link>
+  </li>
+  <li>
+      <Link to="/Economia">
+      <img src="/images/IconoEconomia.png" alt="Economía" className="icon" /> Economía
+     </Link>
+  </li>
+  <li>
+     <Link to="/EstructuraOFS">
+      <img src="/images/IconoEstructuraOFS.png" alt="Estructura OFS" className="icon" /> Estructura OFS
+      </Link>
+   </li>
+  <li>
+      <Link to="/Accesos">
+      <img src="/images/IconoAccesos.png" alt="Accesos" className="icon" /> Accesos
+      </Link>
+  </li>
+  <li>
+    <Link to="/Reportes">
+      <img src="/images/IconoReportes.png" alt="Reportes" className="icon" /> Reportes
+    </Link>
+  </li>
+</ul>
+
 
         </nav>
         <div className="logout">

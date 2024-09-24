@@ -1,0 +1,208 @@
+.Submenuhs{
+  display: flex;
+  height: 100vh; 
+}
+
+
+.sidebar {
+  width: 250px;
+  background-color: #f7f7f7;
+  padding: 20px;
+  height: 95%; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+.profile {
+  text-align: center;
+}
+}
+
+.profile {
+  text-align: center;
+  padding: 20px;
+  
+}
+
+.profile-pic {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.role {
+  color: #286700;
+}
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+.table-container {
+  margin-top: 6em;
+  border-collapse: collapse; 
+  width: 100%; 
+  flex-grow: 1;
+}
+
+.table-container th,
+.table-container td {
+  border: 1px solid #ccc; 
+  padding: 8px; 
+  text-align: left; 
+}
+
+.table-container th {
+  background-color: #f2f2f2; 
+}
+
+
+.table-container .activo {
+ 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+.table-container .fecha {
+  
+  text-align: center; 
+}
+.table {
+  margin-bottom: 600px;
+}
+
+
+/* barra busqueda*/
+
+.search-bar-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px 20px; 
+  width: 700px; 
+  position: relative; 
+}
+
+.search-bar {
+  flex: 1;
+  display: flex;
+}
+
+.search-input {
+  flex: 1;
+  padding: 7px;
+  border: 1px solid #997164;
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  font-size: 14px;
+}
+
+
+
+.search-button {
+  padding: 7px 20px;
+  background-color: #74B22C;
+  color: white;
+  border: 1px solid #74B22C;
+  border-radius: 0 8px 8px 0;
+  cursor: pointer;
+  font-size: 16px;
+}
+.search-button:hover {
+  background-color: #286700;
+}
+
+/* Contenedor para el botón de filtros y el menú desplegable */
+.filter-container {
+  position: relative; 
+}
+
+.filter-button {
+  padding: 7px 20px;
+  margin-left: 10px;
+  background-color: #74B22C;
+  color: white;
+  border: 1px solid #74B22C;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.filter-button:hover {
+  background-color: #286700;
+}
+
+/* Estilo del menú de filtros */
+.filter-menu {
+  position: absolute;
+  top: 37px; 
+  left: 0;
+  background-color: #f1f1f1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: auto;
+  min-width: 150px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000; 
+}
+
+.filter-menu label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.filter-menu label input {
+  margin-right: 8px;
+}
+
+
+/*Edicion*/
+.edit-button {
+  background-color: #ffffff; 
+  color: white;              
+  border: none;              
+  padding: 8px 16px;         
+  text-align: center;        
+  margin: 4px 2px;          
+  cursor: pointer;           
+  border-radius: 4px;        
+  transition-duration: 0.4s; 
+  width: 22px;  
+  height: 20px; 
+}
+.edit-button:hover {
+  background-color: #7C4835;
+}
+
+.alta-container {
+  display: inline-block;
+  margin-left: 10px; 
+}
+
+.alta-button {
+  padding: 7px 20px;
+  background-color: #7C4835;
+  color: white;
+  
+  border: 1px solid #7C4835;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 16px;
+
+}
+
+.alta-button:hover {
+  background-color: #4D1F0F;
+}
+
+
+
