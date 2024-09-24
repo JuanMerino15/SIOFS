@@ -29,6 +29,7 @@ function HistorialEtapas() {
             <li><a href="#reportes"><i className="fas fa-file-alt"></i> Reportes</a></li>
           </ul>
 
+
         <ul>
    <li>
       <Link to="/">
@@ -64,7 +65,9 @@ function HistorialEtapas() {
 
         </nav>
         <div className="logout">
-          <a href="#cerrar-sesion"><i className="fas fa-sign-out-alt"></i> Cerrar Sesión</a>
+        <Link to="/Cerrar-sesion">
+                <img src="/images/IconoCerrarSesion.png" alt="cerrar-sesion" className="icon" /> Cerrar Sesión
+              </Link>
         </div>
       </aside>
 

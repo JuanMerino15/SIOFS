@@ -6,8 +6,8 @@
   }
   
   .profile-pic2 {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     overflow: hidden; 
     margin: 0 auto; 
@@ -23,7 +23,7 @@
   
   
   .sidebar2 {
-    width: 220px; 
+    width: 200px; 
     height: 100%; 
     background: #FAFAFA;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -40,45 +40,46 @@
   
     .profile2 {
       text-align: center;
-      margin-bottom: 30px; /* Agrega un margen entre el perfil y el contenido */
+      margin-top: 90px;
     }
   }
   
-nav ul {
-    list-style-type: none;
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; 
     padding: 0;
+    text-decoration: none; 
   }
-  
   ul li {
     display: flex;
     align-items: center;
     margin: 10px 0;
   }
-  
-  ul li i {
-    margin-right: 30px; 
-    color: #333;
-  }
-  
-  
   nav ul li a {
-    text-decoration: none;
-    color: #333;
+    text-decoration: none;  /* Elimina el subrayado */
+    color: #000000;  /* Cambia el color del texto a rojo */
   }
   
+  
+
   .logout {
     margin-bottom: 80px;
+  
+  height: 27px;
+  left: 136px;
+  top: 892px;
+  color: #000000;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
   }
   
   .logout a {
-    
-    width: 18.75px;
-    height: 18px;
-    left: 21.02px;
-    top: 21.11px;
-    
-    transform: rotate(-179.7deg);
+    text-decoration: none; 
+  }
+  
+  .logout a:hover {
+    color: darkred; 
   }
   
   
@@ -150,6 +151,7 @@ nav ul {
   
   .card h2 {
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .row {
@@ -161,6 +163,7 @@ nav ul {
   .col {
     flex: 1;
     margin-right: 10px;
+    
   }
   
   .col:last-child {
@@ -170,6 +173,7 @@ nav ul {
   .col label {
     display: block;
     margin-bottom: 5px;
+    
   }
   
   .input-group {
@@ -180,9 +184,40 @@ nav ul {
   
   .input-group input {
     width: 100%;
-    padding: 5px 10px;
+    padding-right: 40px; /* Aumenta el espacio para el icono */
     border: 1px solid #ccc;
-    border-radius: 3px;
+    border-radius: 30px;
+    height: 35px; /* Altura ajustada */
+  }
+  
+  /* Estilo del ícono del calendario dentro del input */
+  .calendar-icon {
+    position: absolute;
+    right: 12px; /* Ajusta el margen derecho */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #5C3B2E;  /* Fondo café */
+    padding: 5px; /* Reducir padding del fondo */
+    border-radius: 50%;
+    width: 20px;  /* Tamaño del ícono */
+    height: 20px;
+    z-index: 1; /* Asegura que esté por encima del input */
+  }
+  
+  /* Estilo del ícono del check fuera del input */
+  .check-icon {
+    position: absolute;
+    right: -35px; /* Separación para evitar solapamiento */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 2; /* Asegura que esté por encima de otros elementos */
+  }
+  
+  .input-group .input-icon:last-of-type {
+    right: 10px; /* Espacio entre los dos íconos */
   }
   
   .input-group i {
@@ -200,7 +235,7 @@ nav ul {
   .buttons {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 60px;
     margin-left: 450px;
     width: 155px;
     height: 50px;
