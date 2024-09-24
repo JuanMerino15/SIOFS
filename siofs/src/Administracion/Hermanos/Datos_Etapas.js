@@ -49,7 +49,9 @@ const Datos_Etapas = () => {
 </ul>
         </nav>
         <div className="logout">
-          <a href="#cerrar-sesion"><i className="cerrar sesion"></i> Cerrar Sesión</a>
+        <Link to="/Cerrar-sesion">
+                <img src="/images/IconoCerrarSesion.png" alt="cerrar-sesion" className="icon" /> Cerrar Sesión
+              </Link>
         </div>
       </aside>
 
@@ -70,8 +72,10 @@ const Datos_Etapas = () => {
               <div className="col">
                 <label htmlFor="imposicion1">Imposición 1a Etapa</label>
                 <div className="input-group">
-                  <input type="text" id="imposicion1" />
-                </div>
+  <input type="text" id="imposicion2" />
+  <img src="/images/IconoCalendario.png" alt="Calendario" className="calendar-icon" />
+  <img src="/images/check.png" alt="Check" className="check-icon" />
+</div>
               </div>
               <div className="col">
                 <label htmlFor="profesionTemporal">Profesión Temporal</label>

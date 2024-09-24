@@ -12,7 +12,7 @@ function HomePage() {
             <img src="/images/icono_admin.png" className="iconA" alt="Icono de usuario" />
           </div>
           <h3>User Name</h3>
-          <p className="role">Ministro</p>
+          <p className="role">Ecónomo</p>
         </div>
         <nav>
 
@@ -51,7 +51,9 @@ function HomePage() {
 
         </nav>
         <div className="logout">
-          <a href="#cerrar-sesion"><i className="cerrar sesion"></i> Cerrar Sesión</a>
+        <Link to="/Cerrar-sesion">
+                <img src="/images/IconoCerrarSesion.png" alt="cerrar-sesion" className="icon" /> Cerrar Sesión
+              </Link>
         </div>
       </aside>
 

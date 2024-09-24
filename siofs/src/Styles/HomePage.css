@@ -51,7 +51,7 @@ html, body {
 
   .profile {
     text-align: center;
-    margin-bottom: 30px; /* Agrega un margen entre el perfil y el contenido */
+    margin-top: 90px;
   }
 }
 
@@ -74,42 +74,43 @@ html, body {
 .role {
   color: green;
 }
-
 nav ul {
-  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px; 
   padding: 0;
+  text-decoration: none; 
 }
 
 ul li {
   display: flex;
   align-items: center;
-  margin: 10px 0;
+  margin: 150px 0; /* Aumenta el espacio aquí */
 }
-
-ul li i {
-  margin-right: 30px; 
-  color: #333;
-}
-
-
 nav ul li a {
-  text-decoration: none;
-  color: #333;
+  text-decoration: none;  /* Elimina el subrayado */
+  color: #000000;  /* Cambia el color del texto a rojo */
 }
+
+
 
 .logout {
   margin-bottom: 80px;
+
+height: 27px;
+left: 136px;
+top: 892px;
+color: #000000;
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
 }
 
 .logout a {
-  
-  width: 18.75px;
-  height: 18px;
-  left: 21.02px;
-  top: 21.11px;
-  
-  transform: rotate(-179.7deg);
+  text-decoration: none; 
+}
+
+.logout a:hover {
+  color: darkred; 
 }
 
 
