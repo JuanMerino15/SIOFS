@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';/*Se borro Link*/
 import '../../Styles/Historial_Etapa.css';
-
+import Sidebar from '../../Sidebar'; 
 function HistorialEtapas() {
   const navigate = useNavigate(); 
   const handleButtonClick = () => {
@@ -9,68 +9,8 @@ function HistorialEtapas() {
   };
   return (
     <div className="HistorialEtapas">
-
-      <aside className="sidebar1">
-        <div className="profile">
-          <div className="profile-pic">
-            <img src="/images/icono_admin.png" className="iconA1" alt="Icono de usuario" />
-          </div>
-          <h3>User Name</h3>
-          <p className="role">Secretario</p>
-        </div>
-        <nav>
-
-          <ul>
-            <li><a href="#inicio"><i className="fa-regular fa-house"></i> Inicio</a></li>
-            <li><Link to="/Administracion/Hermanos/Historial_Etapa">Administración</Link></li>
-            <li><Link to="/Administracion/Hermanos/submenu_HS"> Economía</Link></li>
-            <li><a href="#estructura-ofs"><i className="fas fa-sitemap"></i> Estructura OFS</a></li>
-            <li><a href="#accesos"><i className="fas fa-key"></i> Accesos</a></li>
-            <li><a href="#reportes"><i className="fas fa-file-alt"></i> Reportes</a></li>
-          </ul>
-
-
-        <ul>
-   <li>
-      <Link to="/">
-      <img src="/images/IconoHome.png" alt="Inicio" className="icon" /> Inicio
-      </Link>
-    </li>
-   <li>
-      <Link to="/Administracion/Hermanos/Historial_Etapa">
-      <img src="/images/IconoAdministracion.png" alt="Administración" className="icon" /> Administración
-     </Link>
-  </li>
-  <li>
-      <Link to="/Economia">
-      <img src="/images/IconoEconomia.png" alt="Economía" className="icon" /> Economía
-     </Link>
-  </li>
-  <li>
-     <Link to="/EstructuraOFS">
-      <img src="/images/IconoEstructuraOFS.png" alt="Estructura OFS" className="icon" /> Estructura OFS
-      </Link>
-   </li>
-  <li>
-      <Link to="/Accesos">
-      <img src="/images/IconoAccesos.png" alt="Accesos" className="icon" /> Accesos
-      </Link>
-  </li>
-  <li>
-    <Link to="/Reportes">
-      <img src="/images/IconoReportes.png" alt="Reportes" className="icon" /> Reportes
-    </Link>
-  </li>
-</ul>
-
-        </nav>
-        <div className="logout">
-        <Link to="/Cerrar-sesion">
-                <img src="/images/IconoCerrarSesion.png" alt="cerrar-sesion" className="icon" /> Cerrar Sesión
-              </Link>
-        </div>
-      </aside>
-
+<Sidebar />
+      
       <main className="content1">
         <header className="header">
         <div className="title">
