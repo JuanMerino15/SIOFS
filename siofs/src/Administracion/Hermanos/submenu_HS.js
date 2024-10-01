@@ -37,8 +37,11 @@ function Submenuhs() {
 
       <main className="content">
         <header className="header">
-          <h1>Administración</h1>
-          <h2>Hermanos Seglares</h2>
+        <div className="title">
+           <h1>Administración</h1>
+            <h2>Hermanos Seglares</h2>
+        </div>
+
 
           <div className="search-bar-container">
             <div className="search-bar">
