@@ -1,7 +1,7 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';/*Se borro Link*/
 import '../../Styles/Historial_Etapa.css';
-
+import Sidebar from '../../Sidebar'; 
 function HistorialEtapas() {
   const navigate = useNavigate(); 
   const handleButtonClick = () => {
@@ -9,6 +9,7 @@ function HistorialEtapas() {
   };
   return (
     <div className="HistorialEtapas">
+
 
       <aside className="sidebar1">
         <div className="profile">
@@ -61,6 +62,10 @@ function HistorialEtapas() {
               </Link>
         </div>
       </aside>
+
+
+<Sidebar />
+      
 
       <main className="content1">
         <header className="header">

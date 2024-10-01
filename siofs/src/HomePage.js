@@ -1,10 +1,12 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+/*import { Link } from 'react-router-dom';*/
 import './Styles/HomePage.css';
+import Sidebar from './Sidebar';
 
 function HomePage() {
   return (
     <div className="HomePage">
+
       <aside className="sidebar">
         <div className="profile">
           <div className="profile-pic">
@@ -53,6 +55,9 @@ function HomePage() {
           </Link>
         </div>
       </aside>
+
+      <Sidebar />
+
 
       <main className="content">
         <header className="header">
