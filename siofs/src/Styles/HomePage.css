@@ -34,25 +34,31 @@ html, body {
 }
 
 .sidebar {
-  width: 200px; 
-  height: 100%; 
+  width: 270px;
+  height: 100%;
   background: #FAFAFA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
-  position: fixed; 
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
+  z-index: 100; /* Asegura que el sidebar esté por encima del contenido */
+}
 
-
-
-  .profile {
-    text-align: center;
-    margin-top: 90px;
-  }
+.content {
+  margin-left: 270px; /* Mismo ancho del sidebar */
+  padding: 20px;
+  flex-grow: 1; /* El contenido ocupará todo el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  overflow-y: auto; /* Habilita el scroll si el contenido es muy largo */
+  width: calc(100% - 270px); /* Se ajusta al espacio restante de la pantalla */
 }
 
 .profile-pic {
@@ -96,34 +102,21 @@ nav ul li a {
 
 .logout {
   margin-bottom: 80px;
-
 height: 27px;
 left: 136px;
 top: 892px;
 color: #000000;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  
+
 }
 
 .logout a {
   text-decoration: none; 
 }
-
 .logout a:hover {
   color: darkred; 
 }
 
-
-.content {
-  
-  margin-left: 270px; 
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  width: calc(100% - 270px); /* Asegura que el contenido use el resto del espacio */
-}
 
 .welcome-container {
   display: flex;
@@ -183,7 +176,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   grid-template-columns: repeat(2, 1fr); 
   gap: 20px;
   width: 100%; 
-  
+
 }
 .features h1{
   font-size: 32px;

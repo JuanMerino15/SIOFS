@@ -25,7 +25,6 @@ h3 {
 p, li, a {
   font-weight: 400; 
 }
-
 nav ul {
   display: flex;
   flex-direction: column;
@@ -33,12 +32,10 @@ nav ul {
   padding: 0;
   text-decoration: none; 
 }
-
 nav ul li a {
   text-decoration: none;  /* Elimina el subrayado */
   color: #000000;  /* Cambia el color del texto a rojo */
 }
-
 .header h2{
   color: #454545;
   font-style: normal;
@@ -89,7 +86,7 @@ nav ul li a {
 
 
 .content1 {
-  
+
   margin-left: 270px; /* Aumentar el margen para que el contenido quede a la derecha del sidebar */
   padding: 20px;
   display: flex;
@@ -98,45 +95,62 @@ nav ul li a {
   align-items: flex-start;
   width: calc(100% - 270px); /* Asegura que el contenido use el resto del espacio */
 }
-.table-container {
+.TableContainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;
-  
-  position: absolute;
-  width: 1057px;
-  height: 171px;
-  left: calc(50% - 1057px/2 + 163px);
-  top: 304px;
-  
+  position: relative;
+  width: 100%;
+  margin-top: 2em; /* Mejorando el margen superior */
 }
 
-.table-container th,
-.table-container td {
-  border: 1px solid #ccc; 
-  padding: 8px; 
-  text-align: left; 
+.TableContainer table {
+  width: 100%;
+  border-collapse: collapse; /* Elimina el espacio entre bordes */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
 }
 
-.table-container th {
-  background-color: #f2f2f2; 
+.TableContainer th, .TableContainer td {
+  padding: 10px; /* Aumentar el padding */
+  text-align: left;
+  border-bottom: 1px solid #ddd; /* Ligeramente más suave */
+}
+
+.TableContainer th {
+  background-color: #74B22C; /* Color más llamativo para la cabecera */
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.TableContainer tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Alternar colores en las filas */
+}
+
+.TableContainer tbody tr:hover {
+  background-color: #f1f1f1; /* Efecto hover para resaltar fila seleccionada */
+}
+
+.TableContainer td {
+  color: #333; /* Texto más oscuro para mejor lectura */
 }
 
 
-.table-container .activo {
- 
+.TableContainer .activo {
+
   text-align: center; 
   font-weight: bold; 
 }
 
-.table-container .fecha {
-  
+.TableContainer .fecha {
+
   text-align: center; 
 }
 .table {
   margin-bottom: 600px;
-  
+
 }
 .capture-button {
   display: flex;
@@ -152,7 +166,7 @@ nav ul li a {
   height: 50px;
   right: 460px;
   top: 400px; /* mover el botón hacia arriba */
-  
+
   background: #74B22C;
   border-radius: 20px;
 
@@ -177,7 +191,6 @@ nav ul li a {
 }
 .logout {
   margin-bottom: 80px;
-
 height: 27px;
 left: 136px;
 top: 892px;
@@ -185,11 +198,9 @@ color: #000000;
 text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   
 }
-
 .logout a {
   text-decoration: none; 
 }
-
 .logout a:hover {
   color: darkred; 
 }

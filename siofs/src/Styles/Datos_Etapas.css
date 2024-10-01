@@ -180,40 +180,42 @@
     position: relative;
     display: flex;
     align-items: center;
+    width: 100%;
   }
   
+  /* Estilo para los inputs */
   .input-group input {
     width: 100%;
-    padding-right: 40px; /* Aumenta el espacio para el icono */
+    padding-right: 40px; /* Espacio para los iconos si es necesario */
     border: 1px solid #ccc;
     border-radius: 30px;
-    height: 35px; /* Altura ajustada */
+    height: 35px; /* Altura del input */
   }
   
-  /* Estilo del ícono del calendario dentro del input */
+  /* Ícono del calendario */
   .calendar-icon {
     position: absolute;
-    right: 12px; /* Ajusta el margen derecho */
+    right: -40px; /* Ajusta la posición para estar fuera del input */
     top: 50%;
     transform: translateY(-50%);
-    background-color: #5C3B2E;  /* Fondo café */
-    padding: 5px; /* Reducir padding del fondo */
+    background-color: #5C3B2E; /* Fondo del icono */
+    padding: 5px;
     border-radius: 50%;
-    width: 20px;  /* Tamaño del ícono */
+    width: 20px;
     height: 20px;
-    z-index: 1; /* Asegura que esté por encima del input */
+    z-index: 1;
   }
   
-  /* Estilo del ícono del check fuera del input */
+  /* Ícono del check */
   .check-icon {
     position: absolute;
-    right: -35px; /* Separación para evitar solapamiento */
+    right: -70px; /* Ajusta la posición para estar fuera del input y lejos del calendario */
     top: 50%;
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
     cursor: pointer;
-    z-index: 2; /* Asegura que esté por encima de otros elementos */
+    z-index: 2; /* Coloca por encima de otros elementos */
   }
   
   .input-group .input-icon:last-of-type {
