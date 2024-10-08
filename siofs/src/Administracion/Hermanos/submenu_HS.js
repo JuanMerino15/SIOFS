@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 /*import { Link } from 'react-router-dom';*/
 import '../../Styles/submenu_HS.css';
-import '../../Styles/Historial_Etapa.css';
 import Sidebar from '../../Sidebar'; 
 
 function Submenuhs() {
@@ -16,15 +15,15 @@ function Submenuhs() {
     <div className="Submenuhs">
       <Sidebar />
 
-      <main className="content">
+      <main className="content1">
         <header className="header">
         <div className="title">
-           <h1>Administración</h1>
-            <h2>Hermanos Seglares</h2>
-        </div>
+            <h1>ADMINISTRACIÓN</h1>
+            <h2>HERMANOS SEGLARES</h2>
+          </div>
+        </header>
 
-
-          <div className="search-bar-container">
+        <div className="search-bar-container">
             <div className="search-bar">
               <input 
                 type="text" 
@@ -73,13 +72,13 @@ function Submenuhs() {
               </button>
             </div>
           </div>
-        </header>
 
-        <section className="table-container">
+          {/*Tabla*/}
+          <section className="TableContainer">
           <table className='table'>
             <thead>
               <tr>
-                <th>ID</th>
+              <th>ID</th>
                 <th>Nombre completo</th>
                 <th>Dirección</th>
                 <th>Familia Franciscana</th>
@@ -90,7 +89,7 @@ function Submenuhs() {
             </thead>
             <tbody>
               <tr>
-                <td>J201</td>
+              <td>J201</td>
                 <td>Rodrigo Rivera Macias</td>
                 <td>Petra Marquez No.40</td>
                 <td>JOVs</td>
@@ -125,6 +124,9 @@ function Submenuhs() {
               </tr>
             </tbody>
           </table>
+        
+           
+         
         </section>
       </main>
     </div>
