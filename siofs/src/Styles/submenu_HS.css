@@ -1,3 +1,6 @@
+body {
+  font-family: 'Jost', sans-serif;
+}
 .Submenuhs{
   display: flex;
   height: 100vh; 
@@ -123,25 +126,27 @@
 .search-input {
   flex: 1;
   padding: 7px;
-  border: 1px solid #74B22C;
+  border: 1px solid #7C4835;
   border-right: none;
   border-radius: 8px 0 0 8px;
   font-size: 14px;
+  font-family: 'Jost', sans-serif;
 }
 
 
 
 .search-button {
   padding: 7px 20px;
-  background-color: #74B22C;
-  color: white;
-  border: 1px solid #74B22C;
+  background-color: transparent;
+  color: #454545;
+  border: 1px solid #7C4835;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Jost', sans-serif;
 }
 .search-button:hover {
-  background-color: #286700;
+  background-color: #F3F0EF;
 }
 
 /* Contenedor para el botón de filtros y el menú desplegable */
@@ -152,15 +157,16 @@
 .filter-button {
   padding: 7px 20px;
   margin-left: 10px;
-  background-color: #74B22C;
-  color: white;
-  border: 1px solid #74B22C;
+  background-color: transparent;
+  color: #454545;
+  border: 1px solid #7C4835;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Jost', sans-serif;
 }
 .filter-button:hover {
-  background-color: #286700;
+  background-color: #F3F0EF;
 }
 
 /* Estilo del menú de filtros */
@@ -192,12 +198,10 @@
 
 /*Edicion*/
 .edit-button {
-  background-color: #ffffff; 
-  color: white;              
-  border: none;              
-  padding: 2px 4px;  /* Reduce el padding para ajustar el tamaño del botón */
+  background-color: transparent;              
+  border: 2px ;              
+  padding: 2px 5px;  /* Reduce el padding para ajustar el tamaño del botón */
   text-align: center;        
-  margin: 0;  /* Elimina cualquier margen extra */
   cursor: pointer;           
   border-radius: 4px;        
   transition-duration: 0.4s; 
@@ -207,7 +211,7 @@
 }
 
 .edit-button:hover {
-  background-color: #7C4835;}
+  background-color: #d6c5bf;}
 
 .alta-container {
   display: inline-block;
@@ -223,7 +227,7 @@
   cursor: pointer;
   border-radius: 8px;
   font-size: 16px;
-
+  font-family: 'Jost', sans-serif;
 }
 
 .alta-button:hover {
