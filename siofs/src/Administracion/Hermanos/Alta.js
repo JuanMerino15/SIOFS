@@ -1,179 +1,139 @@
+import '../../Styles/Alta.css';
 import React, { useState } from 'react';
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
+import { useNavigate } from 'react-router-dom';
+import Sidebar from '../../Sidebar';
 
-export default function Alta() {
-    const [formData, setFormData] = useState({
-        nombre: '',
-        apellidoPaterno: '',
-        apellidoMaterno: '',
-        fechaNacimiento: '',
-        lugarNacimiento: '',
-        numeroCelular: '',
-        numeroCasa: '',
-        estadoCivil: '',
-        familiaFranciscana: '',
-        codigoPostal: '',
-        asentamiento: '',
-        municipio: '',
-        entidad: '',
-        pais: '',
-        calle: '',
-        numeroInterior: '',
-        numeroExterior: '',
-        referencias: ''
+function Alta() {
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    nombres: '',
+    estadoCivil: '',
+    apellidoPaterno: '',
+    apellidoMaterno: '',
+    fechaNacimiento: '',
+    lugarNacimiento: '',
+    celular: '',
+    casa: '',
+    familiaFranciscana: '',
+  });
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
     });
+  };
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log('Datos del formulario:', formData);
+    navigate('/');
+  };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
+  return (
+    <div className="AltaPage">
+      <Sidebar />
+      <main className="AltaFormContainer">
+        <h2>DATOS PERSONALES</h2>
+        <form onSubmit={handleSubmit} className="AltaFormGrid">
+          <div className="AltaFormField">
+            <label>Nombre(s):</label>
+            <input
+              type="text"
+              name="nombres"
+              value={formData.nombres}
+              onChange={handleChange}
+            />
+          </div>
 
-        console.log("Form data submitted: ", formData);
-    };
+          <div className="AltaFormField">
+            <label>Estado Civil:</label>
+            <input
+              type="text"
+              name="estadoCivil"
+              value={formData.estadoCivil}
+              onChange={handleChange}
+            />
+          </div>
 
-    return (
-        <div className="container mx-auto p-6">
-            <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-md space-y-4">
-                <h1 className="text-2xl font-bold text-center text-[var(--primary-100)]">Datos Personales</h1>
-                
-                <div className="grid grid-cols-2 gap-4">
-                    <Input
-                        name="nombre"
-                        placeholder="Nombre(s)"
-                        value={formData.nombre}
-                        onChange={handleChange}
-                    />
-                    <select
-                        name="estadoCivil"
-                        value={formData.estadoCivil}
-                        onChange={handleChange}
-                        className="w-full p-2 border rounded-md"
-                    >
-                        <option value="" disabled>Estado Civil</option>
-                        <option value="soltero">Soltero</option>
-                        <option value="casado">Casado</option>
-                        <option value="divorciado">Divorciado</option>
-                        <option value="viudo">Viudo</option>
-                    </select>
-                    <Input
-                        name="apellidoPaterno"
-                        placeholder="Apellido Paterno"
-                        value={formData.apellidoPaterno}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="apellidoMaterno"
-                        placeholder="Apellido Materno"
-                        value={formData.apellidoMaterno}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="fechaNacimiento"
-                        placeholder="Fecha de Nacimiento"
-                        value={formData.fechaNacimiento}
-                        onChange={handleChange}
-                        type="date"
-                    />
-                    <Input
-                        name="lugarNacimiento"
-                        placeholder="Lugar de Nacimiento"
-                        value={formData.lugarNacimiento}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="numeroCelular"
-                        placeholder="Número Celular"
-                        value={formData.numeroCelular}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="numeroCasa"
-                        placeholder="Número de Casa"
-                        value={formData.numeroCasa}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="familiaFranciscana"
-                        placeholder="Familia Franciscana"
-                        value={formData.familiaFranciscana}
-                        onChange={handleChange}
-                        className="col-span-2"
-                    />
-                </div>
+          <div className="AltaFormField">
+            <label>Apellido Paterno:</label>
+            <input
+              type="text"
+              name="apellidoPaterno"
+              value={formData.apellidoPaterno}
+              onChange={handleChange}
+            />
+          </div>
 
-                <h2 className="text-2xl font-bold text-center mt-6 text-[var(--primary-100)]">Dirección</h2>
-                
-                <div className="grid grid-cols-2 gap-4">
-                    <Input
-                        name="codigoPostal"
-                        placeholder="Código Postal"
-                        value={formData.codigoPostal}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="asentamiento"
-                        placeholder="Asentamiento"
-                        value={formData.asentamiento}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="municipio"
-                        placeholder="Municipio"
-                        value={formData.municipio}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="entidad"
-                        placeholder="Entidad"
-                        value={formData.entidad}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="pais"
-                        placeholder="País"
-                        value={formData.pais}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="calle"
-                        placeholder="Calle"
-                        value={formData.calle}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="numeroInterior"
-                        placeholder="Número Interior"
-                        value={formData.numeroInterior}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="numeroExterior"
-                        placeholder="Número Exterior"
-                        value={formData.numeroExterior}
-                        onChange={handleChange}
-                    />
-                    <Input
-                        name="referencias"
-                        placeholder="Referencias"
-                        value={formData.referencias}
-                        onChange={handleChange}
-                        className="col-span-2"
-                    />
-                </div>
+          <div className="AltaFormField">
+            <label>Apellido Materno:</label>
+            <input
+              type="text"
+              name="apellidoMaterno"
+              value={formData.apellidoMaterno}
+              onChange={handleChange}
+            />
+          </div>
 
-                <div className="mt-6 flex justify-end space-x-4">
-                    <Button className="bg-[var(--accent-100)] hover:bg-[var(--accent-200)] text-white" type="submit">
-                        Guardar
-                    </Button>
-                    <Button variant="outline" className="text-[var(--primary-100)] border-[var(--primary-100)]" type="button" onClick={() => setFormData({})}>
-                        Cancelar
-                    </Button>
-                </div>
-            </form>
-        </div>
-    );
+          <div className="AltaFormField">
+            <label>Fecha de Nacimiento:</label>
+            <input
+              type="date"
+              name="fechaNacimiento"
+              value={formData.fechaNacimiento}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="AltaFormField">
+            <label>Lugar de Nacimiento:</label>
+            <input
+              type="text"
+              name="lugarNacimiento"
+              value={formData.lugarNacimiento}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="AltaFormField">
+            <label>Número de Celular:</label>
+            <input
+              type="text"
+              name="celular"
+              value={formData.celular}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="AltaFormField">
+            <label>Número de Casa:</label>
+            <input
+              type="text"
+              name="casa"
+              value={formData.casa}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="AltaFormField">
+            <label>Familia Franciscana:</label>
+            <input
+              type="text"
+              name="familiaFranciscana"
+              value={formData.familiaFranciscana}
+              onChange={handleChange}
+            />
+          </div>
+        </form>
+      </main>
+      <div className="AltaSubmitButtonContainer">
+        <button type="submit" className="AltaSubmitButton">Enviar</button>
+      </div>
+    </div>
+  );
 }
+
+export default Alta;
+
