@@ -1,0 +1,69 @@
+h2 {
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 600; /* Semibold */
+  }
+
+/* Contenedor general del formulario */
+.AltaFormContainer {
+    width: 100%;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 20px 30px 15px 20px;
+    background-color: #F3F0EF;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  /* Estilo para el formulario usando grid */
+  .AltaFormGrid {
+    display: grid;
+    grid-template-columns: 1.4fr 1.1fr; /* Dos columnas */
+    width: 100%;
+  }
+  
+  /* Ajuste de los campos a la derecha */
+  .AltaFormField:nth-child(even) {
+    padding-left: 50px; /* Espacio a la izquierda */
+  }
+  
+  /* Etiquetas y campos de entrada en línea */
+  .AltaFormField label {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 0px;
+    display: block;
+    margin-left: 10px;
+  }
+  
+  /* Entradas de texto y otros campos de formulario */
+  .AltaFormField input {
+    width: 95%; /* Ajusta el ancho de los campos de texto */
+    padding: 10px;
+    background-color: #FFFEFB;
+    border: 1px solid #ccc;
+    border-radius: 54px;
+    margin-bottom: 7px;
+  }
+  
+  /* Botón de envío */
+  .AltaSubmitButtonContainer {
+    width: 100%;
+    text-align: center;
+    margin-top: 40px; /* Espacio arriba del botón */
+  }
+  
+  .AltaSubmitButton {
+    padding: 10px 20px;
+    background-color: #4D1F0F;
+    color: #FFFEFB;
+    border: none;
+    border-radius: 25px;
+    font-family: 'Jost', sans-serif;
+    cursor: pointer;
+    text-align: center;
+  }
+  

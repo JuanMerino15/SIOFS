@@ -10,6 +10,7 @@ function HistorialEtapas() {
   return (
     <div className="HistorialEtapas">
 
+
 <Sidebar />
       
 
@@ -17,7 +18,7 @@ function HistorialEtapas() {
         <header className="header">
         <div className="title">
             <h1>ADMINISTRACIÓN</h1>
-            <p>HERMANOS SEGLARES / HISTORIAL ETAPA FORMATIVA</p>
+            <h2>HERMANOS SEGLARES / HISTORIAL ETAPA FORMATIVA</h2>
           </div>
         </header>
         <section className="TableContainer">

@@ -1,88 +1,111 @@
+body {
+  font-family: 'Jost', sans-serif;
+}
 .Submenuhs{
   display: flex;
   height: 100vh; 
 }
 
 
-.sidebar {
-  width: 200px; 
-  height: 100%; 
-  background: #FAFAFA;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  position: fixed; /* Mantén el sidebar fijo en el lado izquierdo */
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-
-
-
-  .profile {
-    text-align: center;
-    margin-top: 90px;
+  h1 {
+    text-align: left;
+    color: #4D1F0F;
+    font-weight: 700; 
+    line-height: 150%;
   }
-}
+  h2 {
+    text-align: left;
+    color: #4D1F0F;
+    font-weight: 700; 
+    line-height: 150%;
+  }
+  h3 {
+    color: #454545;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  
+  p, li, a {
+    font-weight: 400; 
+  }
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2px; 
+    padding: 0;
+    text-decoration: none; 
+  }
+  nav ul li a {
+    text-decoration: none;  /* Elimina el subrayado */
+    color: #000000; 
+  }
+  .header h2{
+    color: #454545;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+  }
+  
 
-.role {
-  color: #286700;
-}
-
-  .content {
-    margin-left: 270px; 
+  
+  .content1 {
+    margin-left: 270px; /* Aumentar el margen para que el contenido quede a la derecha del sidebar */
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    width: calc(100% - 270px);
+    width: calc(100% - 270px); /* Asegura que el contenido use el resto del espacio */
   }
-
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  .title {
+  
+  .TableContainer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Asegura que estén alineados a la izquierda */
+    align-items: flex-start;
+    padding: 0px;
+    position: relative;
+    width: 100%;
+    margin-top: 2em; /* Mejorando el margen superior */
   }
-.table-container {
-  margin-top: 6em;
-  border-collapse: collapse; 
-  width: 100%; 
-  flex-grow: 1;
-}
-
-.table-container th,
-.table-container td {
-  border: 1px solid #ccc; 
-  padding: 8px; 
-  text-align: left; 
-}
-
-.table-container th {
-  background-color: #f2f2f2; 
-}
-
-
-.table-container .activo {
- 
-  text-align: center; 
-  font-weight: bold; 
-}
-
-.table-container .fecha {
   
-  text-align: center; 
-}
-.table {
-  margin-bottom: 600px;
-}
+  .TableContainer table {
+    width: 100%;
+    border-collapse: collapse; /* Elimina el espacio entre bordes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
+  }
+  
+  .TableContainer th, .TableContainer td {
+    padding: 10px; /* Aumentar el padding */
+    text-align: center; /* Centrando horizontalmente el contenido de las celdas */
+    vertical-align: middle; /* Centrando verticalmente el contenido de las celdas */
+    border-bottom: 1px solid #ddd; /* Ligeramente más suave */
+  }
+  
+  .TableContainer th {
+    background-color: #74B22C; /* Color más llamativo para la cabecera */
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  
+  .TableContainer tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Alternar colores en las filas */
+  }
+  
+  .TableContainer tbody tr:hover {
+    background-color: #f1f1f1; /* Efecto hover para resaltar fila seleccionada */
+  }
+ 
+  
+  .TableContainer td img {
+    display: block; 
+    margin: auto; /* Centra la imagen horizontalmente */
+  }
+ 
 
 
 /* barra busqueda*/
@@ -103,25 +126,27 @@
 .search-input {
   flex: 1;
   padding: 7px;
-  border: 1px solid #997164;
+  border: 1px solid #7C4835;
   border-right: none;
   border-radius: 8px 0 0 8px;
   font-size: 14px;
+  font-family: 'Jost', sans-serif;
 }
 
 
 
 .search-button {
   padding: 7px 20px;
-  background-color: #74B22C;
-  color: white;
-  border: 1px solid #74B22C;
+  background-color: transparent;
+  color: #454545;
+  border: 1px solid #7C4835;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Jost', sans-serif;
 }
 .search-button:hover {
-  background-color: #286700;
+  background-color: #F3F0EF;
 }
 
 /* Contenedor para el botón de filtros y el menú desplegable */
@@ -132,15 +157,16 @@
 .filter-button {
   padding: 7px 20px;
   margin-left: 10px;
-  background-color: #74B22C;
-  color: white;
-  border: 1px solid #74B22C;
+  background-color: transparent;
+  color: #454545;
+  border: 1px solid #7C4835;
   border-radius: 8px;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Jost', sans-serif;
 }
 .filter-button:hover {
-  background-color: #286700;
+  background-color: #F3F0EF;
 }
 
 /* Estilo del menú de filtros */
@@ -172,21 +198,20 @@
 
 /*Edicion*/
 .edit-button {
-  background-color: #ffffff; 
-  color: white;              
-  border: none;              
-  padding: 8px 16px;         
+  background-color: transparent;              
+  border: 2px ;              
+  padding: 2px 5px;  /* Reduce el padding para ajustar el tamaño del botón */
   text-align: center;        
-  margin: 4px 2px;          
   cursor: pointer;           
   border-radius: 4px;        
   transition-duration: 0.4s; 
-  width: 22px;  
-  height: 20px; 
+  width: 20px;  /* Ajusta el ancho */
+  height: 20px; /* Mantén el alto pero más pequeño */
+  display: block;  /* Asegura que el botón se ajuste al contenido */
 }
+
 .edit-button:hover {
-  background-color: #7C4835;
-}
+  background-color: #d6c5bf;}
 
 .alta-container {
   display: inline-block;
@@ -202,7 +227,7 @@
   cursor: pointer;
   border-radius: 8px;
   font-size: 16px;
-
+  font-family: 'Jost', sans-serif;
 }
 
 .alta-button:hover {
