@@ -7,8 +7,6 @@ function HomePage() {
   return (
     <div className="HomePage">
 
-     
-
       <Sidebar />
 
 

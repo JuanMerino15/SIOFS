@@ -1,280 +1,226 @@
 .DatosEtapas {
-    display: flex;
-    height: 100vh;
-    width: 100vw; /* Ocupa todo el ancho de la pantalla */
-    overflow: hidden; /* Evita desbordamiento en la página */
-  }
-  
-  .profile-pic2 {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    overflow: hidden; 
-    margin: 0 auto; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ddd;
-  }
+  display: flex;
+  height: 100vh;
+  width: 100vw; /* Ocupa todo el ancho de la pantalla */
+  overflow: hidden; /* Evita desbordamiento en la página */
+}
 
-  .profile-pic2 h3{
-    text-align: center;
-  }
-  
-  
-  .sidebar2 {
-    width: 200px; 
-    height: 100%; 
-    background: #FAFAFA;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
-    position: fixed; /* Mantén el sidebar fijo en el lado izquierdo */
-    top: 0;
-    left: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 20px;
-  
-  
-  
-    .profile2 {
-      text-align: center;
-      margin-top: 90px;
-    }
-  }
-  
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2px; 
-    padding: 0;
-    text-decoration: none; 
-  }
-  ul li {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
-  }
-  nav ul li a {
-    text-decoration: none;  /* Elimina el subrayado */
-    color: #000000;  /* Cambia el color del texto a rojo */
-  }
-  
-  
+.profile-pic2 {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden; 
+  margin: 0 auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ddd;
+}
 
-  .logout {
-    margin-bottom: 80px;
-  
+.profile-pic2 h3 {
+  text-align: center;
+}
+
+.sidebar2 {
+  width: 200px; 
+  height: 100%; 
+  background: #FAFAFA;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+  position: fixed; /* Mantén el sidebar fijo en el lado izquierdo */
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px; 
+  padding: 0;
+  text-decoration: none; 
+}
+
+ul li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+}
+
+nav ul li a {
+  text-decoration: none;  /* Elimina el subrayado */
+  color: #000000;  /* Cambia el color del texto a rojo */
+}
+
+.logout {
+  margin-bottom: 80px;
   height: 27px;
   left: 136px;
   top: 892px;
   color: #000000;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    
-  }
-  
-  .logout a {
-    text-decoration: none; 
-  }
-  
-  .logout a:hover {
-    color: darkred; 
-  }
-  
-  
-  /* Content styles */
-  .content2 {
-    margin-left: 270px; 
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: calc(100% - 270px); /* Asegura que el contenido use el resto del espacio */
-  }
-  
-  .header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .user {
-    display: flex;
-    align-items: center; 
-  
-  }
-  
-  .user-icon {
-    margin-right: 10px;
-  }
-  
-  .user-icon i {
-    font-size: 2em;
-  }
-  
-  .title {
-    flex-grow: 1;
-    text-align: center;
-  }
-  
-  .title h1,
-  .title p {
-    margin: 0;
-  }
-  
- 
+}
+
+.logout a {
+  text-decoration: none; 
+}
+
+.logout a:hover {
+  color: darkred; 
+}
+
+/* Content styles */
+.content2 {
+  margin-left: 270px; 
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 270px); /* Asegura que el contenido use el resto del espacio */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user {
+  display: flex;
+  align-items: center; 
+}
+
+.user-icon {
+  margin-right: 10px;
+}
+
+.user-icon i {
+  font-size: 2em;
+}
+
+.title {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.title h1,
+.title p {
+  margin: 0;
+}
+
 .logo2 {
-    position: absolute;
-    right: 20px;  
-    top: 20px;
-    width: 100px;
-    height: auto;
-  }
-  
-  .main-content {
-    margin-bottom: 20px;
-  }
-  
-  .card {
-    text-align: center;
-    background-color: #f5f4f1;
-    padding: 20px; 
-    border-radius: 54px; 
-    margin-top: 50px; /* Eleva el contenedor */
-    width: 600px; /* Aumenta el ancho */
-    margin-left: 180px; /* Alinea horizontalmente */
-    margin-right: auto; /* Centra horizontalmente */
-  }
-  
-  .card h2 {
-    margin-bottom: 10px;
-    text-align: center;
-  }
-  
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 10px;
-  }
-  
-  .col {
-    flex: 1;
-    margin-right: 10px;
-    
-  }
-  
-  .col:last-child {
-    margin-right: 0;
-  }
-  
-  .col label {
-    display: block;
-    margin-bottom: 5px;
-    
-  }
-  
-  .input-group {
-    position: relative;
-    display: flex;
-    align-items: center;
-    width: 100%;
-  }
-  
-  /* Estilo para los inputs */
-  .input-group input {
-    width: 100%;
-    padding-right: 40px; /* Espacio para los iconos si es necesario */
-    border: 1px solid #ccc;
-    border-radius: 30px;
-    height: 35px; /* Altura del input */
-  }
-  
-  /* Ícono del calendario */
-  .calendar-icon {
-    position: absolute;
-    right: -40px; /* Ajusta la posición para estar fuera del input */
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #5C3B2E; /* Fondo del icono */
-    padding: 5px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    z-index: 1;
-  }
-  
-  /* Ícono del check */
-  .check-icon {
-    position: absolute;
-    right: -70px; /* Ajusta la posición para estar fuera del input y lejos del calendario */
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    z-index: 2; /* Coloca por encima de otros elementos */
-  }
-  
-  .input-group .input-icon:last-of-type {
-    right: 10px; /* Espacio entre los dos íconos */
-  }
-  
-  .input-group i {
-    position: absolute;
-    right: 10px;
-    color: #ccc;
-    font-size: 14px;
-    cursor: pointer;
-  }
-  
-  .input-group i:hover {
-    color: #000;
-  }
-  
-  .buttons {
-    display: flex;
-    justify-content: center;
-    margin-top: 60px;
-    margin-left: 450px;
-    width: 155px;
-    height: 50px;
-  }
-  
-  .buttons button {
-    padding: 10px 40px;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    margin-right: 20px;
-    
-  }
-  
-  .guardar {
-    background-color: #74B22C;
-    color: white;
-  }
-  
-  .cancelar {
-    background-color: #4D1F0F;
-    color: #FFFFFF;
-    
-  }
-  
-  .buttons button:hover {
-    opacity: 0.
-  }
+  position: absolute;
+  right: 20px;  
+  top: 20px;
+  width: 100px;
+  height: auto;
+}
 
-  .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px; /* Espacio entre el ícono y el texto */
-    vertical-align: middle;
-  }
+.main-content {
+  margin-bottom: 20px;
+}
 
-  .iconA2{
-    width: 100%; 
-    height: auto;
-  }
+.card {
+  text-align: center;
+  background-color: #f5f4f1;
+  padding: 20px; 
+  border-radius: 54px; 
+  margin-top: 50px; /* Eleva el contenedor */
+  width: 600px; /* Aumenta el ancho */
+  margin-left: 180px; /* Alinea horizontalmente */
+  margin-right: auto; /* Centra horizontalmente */
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.col {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.col:last-child {
+  margin-right: 0;
+}
+
+.col label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Modificación de input-group */
+.input-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilo para los inputs */
+.input-group input {
+  width: 100%;
+  padding-right: 50px; /* Espacio para el icono del calendario */
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  height: 35px; /* Altura del input */
+}
+
+/* Ícono del calendario */
+.calendar-icon {
+  position: absolute;
+  right: 10px; /* Ajusta la posición para estar dentro del input */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+}
+
+/* Ícono del check */
+.check-icon {
+  position: absolute;
+  right: -40px; /* Ajusta la posición para estar fuera del input y cerca del calendario */
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-left: 450px;
+  width: 155px;
+  height: 50px;
+}
+
+.buttons button {
+  padding: 10px 40px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.guardar {
+  background-color: #74B22C;
+  color: white;
+}
+
+.cancelar {
+  background-color: #4C4B4B;
+  color: white;
+}
