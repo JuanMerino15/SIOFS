@@ -14,12 +14,12 @@ const Login = () => {
   return (
     <div className="login-container">
       <div className="image-panel">
-        <img src="path_to_image.png" alt="Religious Image" />
+        <img src="login_image.png" alt="Religious Image" />
       </div>
 
       <div className="form-panel">
         <div className="logo">
-          <img src="logo_path.png" alt="SIOFS Logo" />
+          <img src="logo.png" alt="SIOFS Logo" />
         </div>
         <h1>SIOFS</h1>
         <form onSubmit={handleLogin}>
