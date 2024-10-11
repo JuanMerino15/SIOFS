@@ -7,7 +7,7 @@ import Submenuhs from './Administracion/Hermanos/submenuHS';
 import reportWebVitals from './reportWebVitals';
 import DatosEtapas from './Administracion/Hermanos/DatosEtapas';
 import Alta from './Administracion/Hermanos/Alta';
-import Login from './login';
+import Edicion from './Administracion/Hermanos/Edicion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -19,7 +19,7 @@ root.render(
         <Route path="/Administracion/Hermanos/submenuHS" element={<Submenuhs />} />
         <Route path="/Administracion/Hermanos/DatosEtapas" element={<DatosEtapas />} />
         <Route path="/Administracion/Hermanos/Alta" element={<Alta />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/Administracion/Hermanos/Edicion" element={<Edicion />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
