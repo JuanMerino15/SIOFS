@@ -21,7 +21,7 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Administracion/Hermanos/Historial_Etapa">
+            <Link to="/Administracion/Hermanos/submenu_HS">
               <img src="/images/IconoAdministracion.png" alt="Administración" className="icon" /> Administración
             </Link>
           </li>
