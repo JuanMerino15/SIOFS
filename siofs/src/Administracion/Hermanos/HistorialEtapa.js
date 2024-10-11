@@ -5,7 +5,7 @@ import Sidebar from '../../Sidebar';
 function HistorialEtapas() {
   const navigate = useNavigate(); 
   const handleButtonClick = () => {
-    navigate('/Administracion/Hermanos/Datos_Etapas');
+    navigate('/Administracion/Hermanos/DatosEtapas');
   };
   return (
     <div className="HistorialEtapas">
