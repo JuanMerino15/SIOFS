@@ -42,8 +42,7 @@ const Datos_Etapas = () => {
                 <label htmlFor="profesionPerpetua">Profesión Perpetua</label>
                 <div className="input-group">
                   <input type="text" id="profesionPerpetua" />
-                  <img src="/images/IconoCalendario.png" alt="Calendario" className="calendar-icon" />
-                  <img src="/images/check.png" alt="Check" className="check-icon" />
+                  
                 </div>
               </div>
             </div>
@@ -60,8 +59,6 @@ const Datos_Etapas = () => {
                 <label htmlFor="formacion">Formación como neoprofeso(a)</label>
                 <div className="input-group">
                   <input type="text" id="formacion" />
-                  <img src="/images/IconoCalendario.png" alt="Calendario" className="calendar-icon" />
-                  <img src="/images/check.png" alt="Check" className="check-icon" />
                 </div>
               </div>
             </div>
