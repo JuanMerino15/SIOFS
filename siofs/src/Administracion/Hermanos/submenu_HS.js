@@ -66,7 +66,7 @@ function Submenuhs() {
 
           {/* Botón de Alta */}
           <div className="alta-container">
-            <Link to="/Administracion/Hermanos/Alta"> {/* Aquí el enlace a /alta */}
+            <Link to="/Administracion/Hermanos/Alta">
               <button className="alta-button">
                 Alta
               </button>
@@ -97,13 +97,14 @@ function Submenuhs() {
                 <td>21</td>
                 <td>10/06/2024</td>
                 <td>
-                  <img
-                    src="/images/boton_editar.png"
-                    alt="Editar"
-                    className="edit-button"
-                    style={{ cursor: 'pointer' }}
-                    onClick={() => alert('Editar J201')}
-                  />
+                  <Link to={`/Administracion/Hermanos/Edicion`}> {/* Aquí la ruta a edicion.js */}
+                    <img
+                      src="/images/boton_editar.png"
+                      alt="Editar"
+                      className="edit-button"
+                      style={{ cursor: 'pointer' }}
+                    />
+                  </Link>
                 </td>
               </tr>
               <tr>
@@ -114,13 +115,14 @@ function Submenuhs() {
                 <td>21</td>
                 <td>10/06/2024</td>
                 <td>
-                  <img
-                    src="/images/boton_editar.png"
-                    alt="Editar"
-                    className="edit-button"
-                    style={{ cursor: 'pointer' }}
-                    onClick={() => alert('Editar J202')}
-                  />
+                  <Link to={`/Administracion/Hermanos/Edicion`}> {/* Aquí la ruta a edicion.js */}
+                    <img
+                      src="/images/boton_editar.png"
+                      alt="Editar"
+                      className="edit-button"
+                      style={{ cursor: 'pointer' }}
+                    />
+                  </Link>
                 </td>
               </tr>
             </tbody>
@@ -132,3 +134,4 @@ function Submenuhs() {
 }
 
 export default Submenuhs;
+

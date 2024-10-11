@@ -1,111 +1,109 @@
 h2 {
-    font-size: 16px; /* Tamaño de fuente */
-    font-weight: 600; /* Semibold */
-  }
+  font-size: 16px; /* Tamaño de fuente */
+  font-weight: 600; /* Semibold */
+}
 
-  .AltaFormContainer {
-    width: 100%;
-    max-width: 560px;
-    padding: 10px 30px 15px 20px; /* Reduce el padding superior */
-    background-color: #F3F0EF;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-  }
-  
-  /* Estilos generales para el contenedor de dirección */
-  .DireccionFormContainer {
-    width: 100%;
-    max-width: 560px;
-    padding: 10px 30px 15px 20px; /* Reduce el padding superior */
-    background-color: #F3F0EF;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-  }
-  
-  .FormContainerWrapper {
-    display: flex;
-    justify-content: center; /* Coloca ambos contenedores al inicio */
-    padding: 0; /* Elimina el padding superior e inferior */
-    margin-left: 210px; /* Separación del sidebar */
-    gap: 100px; /* Espacio entre los contenedores */
-  }
-  /* Estilo para el formulario usando grid */
-  .AltaFormGrid,
-  .DireccionFormGrid {
-    display: grid;
-    grid-template-columns: 1.4fr 1.1fr; /* Dos columnas */
-    width: 100%;
-  }
-  
-  /* Ajuste de los campos a la derecha */
-  .AltaFormField:nth-child(even),
-  .DireccionFormField:nth-child(even) {
-    padding-left: 50px; /* Espacio a la izquierda */
-  }
-  
-  /* Etiquetas y campos de entrada en línea */
-  .AltaFormField label,
-  .DireccionFormField label {
-    font-family: 'Jost', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    color: #000000;
-    margin-bottom: 0px;
-    display: block;
-    margin-left: 10px;
-  }
-  
-  .AltaFormField input,
-  .AltaFormField textarea, /* Añadido para aplicar el mismo estilo a textarea */
-  .DireccionFormField input,
-  .DireccionFormField textarea { /* También para la dirección */
-      width: 95%; /* Ajusta el ancho de los campos de texto */
-      padding: 10px;
-      background-color: #FFFEFB;
-      border: 1px solid #ccc;
-      border-radius: 54px;
-      margin-bottom: 7px;
-  }
-  
-  
-  /* Botón de envío */
-  .AltaSubmitButtonContainer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin-top: 20px;
-    margin-left: 220px;
-  }
-  
-  .AltaSubmitButton {
-    background-color: #74B22C;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    font-family: 'Jost', sans-serif;
-  }
-  
-  .AltaCancelButton {
-    background-color: #4D1F0F;
-    color: white;
-    border: none;
-    border-radius: 20px;
-    padding: 10px 20px;
-    font-size: 18px;
-    cursor: pointer;
-    font-family: 'Jost', sans-serif;
-  }
-  
-  .AltaSubmitButton:hover,
-  .AltaCancelButton:hover {
-    opacity: 0.9;
-  }
-  
-  
+.AltaFormContainer,
+.DireccionFormContainer {
+  width: 100%;
+  max-width: 560px;
+  padding: 10px 30px 15px 20px; /* Reduce el padding superior */
+  background-color: #F3F0EF;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+.FormContainerWrapper {
+  display: flex;
+  justify-content: center; /* Coloca ambos contenedores al inicio */
+  padding: 0; /* Elimina el padding superior e inferior */
+  margin-left: 210px; /* Separación del sidebar */
+  gap: 100px; /* Espacio entre los contenedores */
+}
+
+.AltaFormGrid,
+.DireccionFormGrid {
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr; /* Dos columnas */
+  width: 100%;
+}
+
+.AltaFormField:nth-child(even),
+.DireccionFormField:nth-child(even) {
+  padding-left: 50px; /* Espacio a la izquierda */
+}
+
+.AltaFormField label,
+.DireccionFormField label {
+  font-family: 'Jost', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #000000;
+  margin-bottom: 0px;
+  display: block;
+  margin-left: 10px;
+}
+
+.AltaFormField input,
+.AltaFormField textarea, /* Añadido para aplicar el mismo estilo a textarea */
+.DireccionFormField input,
+.DireccionFormField textarea { /* También para la dirección */
+    width: 95%; /* Ajusta el ancho de los campos de texto */
+    padding: 10px;
+    background-color: #FFFEFB;
+    border: 1px solid #ccc;
+    border-radius: 54px;
+    margin-bottom: 7px;
+}
+
+/* Contenedor para los botones */
+.AltaSubmitButtonContainer {
+  display: flex;
+  justify-content: center; /* Centra los botones horizontalmente */
+  gap: 20px; /* Espacio entre los botones */
+  margin-top: 20px;
+  margin-left: 220px;
+}
+
+/* Botón Historial */
+.AltaHistorialButton {
+  background-color: #007BFF; /* Color azul para el botón Historial */
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+}
+
+.AltaSubmitButton {
+  background-color: #74B22C;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+}
+
+.AltaCancelButton {
+  background-color: #4D1F0F;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+}
+
+/* Hover effect para los botones */
+.AltaSubmitButton:hover,
+.AltaCancelButton:hover,
+.AltaHistorialButton:hover {
+  opacity: 0.9;
+}
