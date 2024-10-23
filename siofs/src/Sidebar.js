@@ -21,12 +21,12 @@ const Sidebar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/Administracion/Hermanos/submenu_HS">
+            <Link to="/Administracion/Hermanos/submenuHS">
               <img src="/images/IconoAdministracion.png" alt="Administración" className="icon" /> Administración
             </Link>
           </li>
           <li>
-            <Link to="/Administracion/Hermanos/submenu_HS">
+            <Link to="/Administracion/Hermanos/submenuHS">
               <img src="/images/IconoEconomia.png" alt="Economía" className="icon" /> Economía
             </Link>
           </li>
