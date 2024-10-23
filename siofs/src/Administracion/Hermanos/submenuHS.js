@@ -11,34 +11,34 @@ function Submenuhs() {
   };
 
   return (
-    <div className="Submenuhs">
+    <div className="submenuhs-container">
       <Sidebar />
 
-      <main className="content1">
-        <header className="header">
-          <div className="title">
+      <main className="submenuhs-content">
+        <header className="submenuhs-header">
+          <div className="submenuhs-title">
             <h1>ADMINISTRACIÓN</h1>
             <h2>HERMANOS SEGLARES</h2>
           </div>
         </header>
 
-        <div className="search-bar-container">
-          <div className="search-bar">
+        <div className="submenuhs-search-bar-container">
+          <div className="submenuhs-search-bar">
             <input
               type="text"
               placeholder="Buscar hermano seglar..."
-              className="search-input"
+              className="submenuhs-search-input"
             />
-            <button className="search-button">Buscar</button>
+            <button className="submenuhs-search-button">Buscar</button>
           </div>
 
-          <div className="filter-container">
-            <button className="filter-button" onClick={toggleFilters}>
+          <div className="submenuhs-filter-container">
+            <button className="submenuhs-filter-button" onClick={toggleFilters}>
               Filtros
             </button>
 
             {showFilters && (
-              <div className="filter-menu">
+              <div className="submenuhs-filter-menu">
                 <label>
                   <input
                     type="radio"
@@ -65,9 +65,9 @@ function Submenuhs() {
           </div>
 
           {/* Botón de Alta */}
-          <div className="alta-container">
+          <div className="submenuhs-alta-container">
             <Link to="/Administracion/Hermanos/Alta">
-              <button className="alta-button">
+              <button className="submenuhs-alta-button">
                 Alta
               </button>
             </Link>
@@ -75,8 +75,8 @@ function Submenuhs() {
         </div>
 
         {/* Tabla */}
-        <section className="TableContainer">
-          <table className="table">
+        <section className="submenuhs-table-container">
+          <table className="submenuhs-table">
             <thead>
               <tr>
                 <th>ID</th>
@@ -85,7 +85,7 @@ function Submenuhs() {
                 <th>Familia Franciscana</th>
                 <th>Edad</th>
                 <th>Fecha de ingreso</th>
-                <th>Edicion</th>
+                <th>Edición</th>
               </tr>
             </thead>
             <tbody>
@@ -101,7 +101,7 @@ function Submenuhs() {
                     <img
                       src="/images/boton_editar.png"
                       alt="Editar"
-                      className="edit-button"
+                      className="submenuhs-edit-button"
                       style={{ cursor: 'pointer' }}
                     />
                   </Link>
@@ -119,7 +119,7 @@ function Submenuhs() {
                     <img
                       src="/images/boton_editar.png"
                       alt="Editar"
-                      className="edit-button"
+                      className="submenuhs-edit-button"
                       style={{ cursor: 'pointer' }}
                     />
                   </Link>
@@ -134,4 +134,3 @@ function Submenuhs() {
 }
 
 export default Submenuhs;
-
