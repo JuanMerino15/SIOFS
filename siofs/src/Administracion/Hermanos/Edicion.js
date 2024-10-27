@@ -46,15 +46,15 @@ function Alta() {
     e.preventDefault();
     console.log('Datos guardados:', formData);
     alert('Los datos han sido guardados correctamente');
-    navigate('/administracion/hermanos/submenu_HS');  // Redirige a la página submenu_HS.js
+    navigate('/administracion/hermanos/submenuHS');  // Redirige a la página submenu_HS.js
   };
 
   const handleCancel = () => {
-    navigate('/administracion/hermanos/submenu_HS');
+    navigate('/administracion/hermanos/submenuHS');
   };
 
   const handleHistorial = () => {
-    navigate('/administracion/hermanos/Historial_Etapa');  // Redirige a la página Historial_Etapa.js
+    navigate('/administracion/hermanos/HistorialEtapa');  // Redirige a la página Historial_Etapa.js
   };
 
   return (

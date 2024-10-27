@@ -1,129 +1,126 @@
 body {
   font-family: 'Jost', sans-serif;
 }
-.Submenuhs{
+
+.submenuhs-container {
   display: flex;
-  height: 100vh; 
+  height: 100vh;
 }
 
+.submenuhs-content h1 {
+  text-align: left;
+  color: #4D1F0F;
+  font-weight: 700;
+  line-height: 150%;
+  margin-bottom: 10px; 
+  margin-top: 8px;
+}
 
-  h1 {
-    text-align: left;
-    color: #4D1F0F;
-    font-weight: 700; 
-    line-height: 150%;
-  }
-  h2 {
-    text-align: left;
-    color: #4D1F0F;
-    font-weight: 700; 
-    line-height: 150%;
-  }
-  h3 {
-    color: #454545;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-  }
-  
-  p, li, a {
-    font-weight: 400; 
-  }
-  nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2px; 
-    padding: 0;
-    text-decoration: none; 
-  }
-  nav ul li a {
-    text-decoration: none;  /* Elimina el subrayado */
-    color: #000000; 
-  }
-  .header h2{
-    color: #454545;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-  }
-  
+.submenuhs-content h2 {
+  color: #454545;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
 
-  
-  .content1 {
-    margin-left: 270px; /* Aumentar el margen para que el contenido quede a la derecha del sidebar */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    width: calc(100% - 270px); /* Asegura que el contenido use el resto del espacio */
-  }
-  
-  .TableContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    position: relative;
-    width: 100%;
-    margin-top: 2em; /* Mejorando el margen superior */
-  }
-  
-  .TableContainer table {
-    width: 100%;
-    border-collapse: collapse; /* Elimina el espacio entre bordes */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Añade una sombra ligera */
-  }
-  
-  .TableContainer th, .TableContainer td {
-    padding: 10px; /* Aumentar el padding */
-    text-align: center; /* Centrando horizontalmente el contenido de las celdas */
-    vertical-align: middle; /* Centrando verticalmente el contenido de las celdas */
-    border-bottom: 1px solid #ddd; /* Ligeramente más suave */
-  }
-  
-  .TableContainer th {
-    background-color: #74B22C; /* Color más llamativo para la cabecera */
-    color: white;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-  }
-  
-  .TableContainer tbody tr:nth-child(even) {
-    background-color: #f9f9f9; /* Alternar colores en las filas */
-  }
-  
-  .TableContainer tbody tr:hover {
-    background-color: #f1f1f1; /* Efecto hover para resaltar fila seleccionada */
-  }
- 
-  
-  .TableContainer td img {
-    display: block; 
-    margin: auto; /* Centra la imagen horizontalmente */
-  }
- 
+.submenuhs-content p,
+.submenuhs-content li,
+.submenuhs-content a {
+  font-weight: 400;
+}
 
+.submenuhs-content nav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 0;
+  text-decoration: none;
+}
 
-/* barra busqueda*/
+.submenuhs-content nav ul li a {
+  text-decoration: none;
+  color: #000000;
+}
 
-.search-bar-container {
+.submenuhs-header h2 {
+  color: #454545;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.submenuhs-content {
+  margin-left: 270px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: calc(100% - 270px);
+}
+
+.submenuhs-table-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  margin-top: 2em;
+}
+
+.submenuhs-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.submenuhs-table-container th,
+.submenuhs-table-container td {
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  border-bottom: 1px solid #ddd;
+}
+
+.submenuhs-table-container th {
+  background-color: #74B22C;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.submenuhs-table-container tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.submenuhs-table-container tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.submenuhs-table-container td img {
+  display: block;
+  margin: auto;
+}
+
+/* Barra de búsqueda */
+.submenuhs-search-bar-container {
   display: flex;
   align-items: center;
-  margin-top: 10px 20px; 
-  width: 700px; 
-  position: relative; 
+  margin-top: 10px 20px;
+  width: 700px;
+  position: relative;
 }
 
-.search-bar {
+.submenuhs-search-bar {
   flex: 1;
   display: flex;
 }
 
-.search-input {
+.submenuhs-search-input {
   flex: 1;
   padding: 7px;
   border: 1px solid #7C4835;
@@ -133,9 +130,7 @@ body {
   font-family: 'Jost', sans-serif;
 }
 
-
-
-.search-button {
+.submenuhs-search-button {
   padding: 7px 20px;
   background-color: transparent;
   color: #454545;
@@ -145,16 +140,17 @@ body {
   font-size: 16px;
   font-family: 'Jost', sans-serif;
 }
-.search-button:hover {
+
+.submenuhs-search-button:hover {
   background-color: #F3F0EF;
 }
 
 /* Contenedor para el botón de filtros y el menú desplegable */
-.filter-container {
-  position: relative; 
+.submenuhs-filter-container {
+  position: relative;
 }
 
-.filter-button {
+.submenuhs-filter-button {
   padding: 7px 20px;
   margin-left: 10px;
   background-color: transparent;
@@ -165,14 +161,15 @@ body {
   font-size: 16px;
   font-family: 'Jost', sans-serif;
 }
-.filter-button:hover {
+
+.submenuhs-filter-button:hover {
   background-color: #F3F0EF;
 }
 
 /* Estilo del menú de filtros */
-.filter-menu {
+.submenuhs-filter-menu {
   position: absolute;
-  top: 37px; 
+  top: 37px;
   left: 0;
   background-color: #f1f1f1;
   padding: 10px;
@@ -181,48 +178,48 @@ body {
   width: auto;
   min-width: 150px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000; 
+  z-index: 1000;
 }
 
-.filter-menu label {
+.submenuhs-filter-menu label {
   display: flex;
   align-items: center;
   margin-bottom: 8px;
   font-size: 14px;
 }
 
-.filter-menu label input {
+.submenuhs-filter-menu label input {
   margin-right: 8px;
 }
 
-
-/*Edicion*/
-.edit-button {
-  background-color: transparent;              
-  border: 2px ;              
-  padding: 2px 5px;  /* Reduce el padding para ajustar el tamaño del botón */
-  text-align: center;        
-  cursor: pointer;           
-  border-radius: 4px;        
-  transition-duration: 0.4s; 
-  width: 20px;  /* Ajusta el ancho */
-  height: 20px; /* Mantén el alto pero más pequeño */
-  display: block;  /* Asegura que el botón se ajuste al contenido */
+/* Edición */
+.submenuhs-edit-button {
+  background-color: transparent;
+  border: 2px;
+  padding: 2px 5px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 4px;
+  transition-duration: 0.4s;
+  width: 20px;
+  height: 20px;
+  display: block;
 }
 
-.edit-button:hover {
-  background-color: #d6c5bf;}
+.submenuhs-edit-button:hover {
+  background-color: #d6c5bf;
+}
 
-.alta-container {
+/* Alta */
+.submenuhs-alta-container {
   display: inline-block;
-  margin-left: 10px; 
+  margin-left: 10px;
 }
 
-.alta-button {
+.submenuhs-alta-button {
   padding: 7px 20px;
   background-color: #7C4835;
   color: white;
-  
   border: 1px solid #7C4835;
   cursor: pointer;
   border-radius: 8px;
@@ -230,7 +227,7 @@ body {
   font-family: 'Jost', sans-serif;
 }
 
-.alta-button:hover {
+.submenuhs-alta-button:hover {
   background-color: #4D1F0F;
 }
 

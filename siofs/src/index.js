@@ -17,6 +17,8 @@ root.render(
         <Route path="/" element={<HomePage />} />
         <Route path="/Administracion/Hermanos/Historial_Etapa" element={<HistorialEtapas />} />
         <Route path="/Administracion/Hermanos/submenuHS" element={<SubmenuHS />} />
+        <Route path="/Administracion/Hermanos/HistorialEtapa" element={<HistorialEtapas />} />
+        <Route path="/Administracion/Hermanos/submenuHS" element={<Submenuhs />} />
         <Route path="/Administracion/Hermanos/DatosEtapas" element={<DatosEtapas />} />
         <Route path="/Administracion/Hermanos/Alta" element={<Alta />} />
         <Route path="/Administracion/Hermanos/Edicion" element={<Edicion />} />
@@ -27,5 +29,3 @@ root.render(
 
 reportWebVitals();
 
-
-reportWebVitals();
