@@ -1,11 +1,11 @@
-/* Sidebar.css */
+
 * {
-  box-sizing: border-box; /* Asegura que el padding y el borde estén incluidos en el tamaño total */
+  box-sizing: border-box; 
 }
 
 .sidebar {
-  width: 230px; /* Ajusta según sea necesario */
-  height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+  width: 230px; 
+  height: 100vh;
   background: #FAFAFA;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 8px;
@@ -14,72 +14,75 @@
   left: 0;
   display: flex;
   flex-direction: column;
-  padding: 20px; /* Este padding puede ser ajustado según necesites */
+  padding: 20px; 
   z-index: 100;
-  overflow: hidden; /* Evita las barras de desplazamiento */
+  overflow: hidden; 
 }
 
 .profile {
   text-align: center;
-  margin-bottom: 20px; /* Espaciado entre perfil y menú */
+  margin-bottom: 20px; 
 }
 
 .slidebar-nav {
   flex: 1;
-  list-style-type: none; /* Eliminar viñetas por defecto */
-  padding: 0; /* Eliminar padding */
-  margin: 0; /* Eliminar margen */
+  list-style-type: none;
+  padding: 0; 
+  margin: 0; 
 }
 
 .menu-item {
-  position: relative; /* Necesario para el submenú */
+  position: relative;
   display: flex;
-  flex-direction: column; /* Mantener el submenú debajo */
+  flex-direction: column; 
 }
 
 .menu-item-header {
   display: flex;
-  align-items: center; /* Alinea verticalmente el icono y el texto */
+  align-items: center; 
   cursor: pointer;
-  padding: 10px; /* Mantén este valor o ajusta como necesites */
+  padding: 10px; 
   transition: background 0.3s;
-  width: 100%; /* Asegura que ocupe el ancho completo */
+  width: 100%; 
 }
 
 .menu-item-header:hover {
-  background-color: #e0e0e0; /* Cambia el color de fondo al pasar el ratón */
+  background-color: #e0e0e0; 
 }
 
 .icon {
   width: 20px;
   height: 20px;
-  margin-right: 10px; /* Espacio entre icono y texto */
+  margin-right: 10px; 
 }
 
 .submenu {
-  display: none; /* Oculta el submenú por defecto */
-  padding-left: 20px; /* Espacio a la izquierda para el submenú */
-  margin: 0; /* Eliminar márgenes en el submenú */
+  padding-left: 20px; 
+  margin: 0;
 }
 
 .menu-item.active .submenu {
-  display: flex; /* Muestra el submenú cuando el elemento principal está activo */
-  flex-direction: column; /* Asegura que los elementos del submenú estén en columna */
+  display: flex;
+  flex-direction: column; 
 }
 
 .submenu li {
-  padding: 8px; /* Espaciado entre elementos del submenú */
-  margin: 0; /* Eliminar márgenes para un espaciado más controlado */
+  padding: 8px; 
+  margin: 0; 
+}
+ 
+.submenu li:hover{
+  background-color:#a05f3b;
 }
 
 .logout {
-  margin-top: auto; /* Mantener el logout en la parte inferior */
+  margin-top: auto; 
 }
 
 .logout a {
   display: flex;
   align-items: center;
-  padding: 10px 15px; /* Ajustar el padding para mantener la consistencia */
+  padding: 10px 15px; 
   color: #000;
   text-decoration: none;
 }
