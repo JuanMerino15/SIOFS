@@ -44,29 +44,6 @@ nav ul li a {
   line-height: 150%;
 }
 
-.sidebar1 {
-  width: 200px; /* Ajustar según el tamaño deseado */
-  height: 100%; 
-  background: #FAFAFA;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
-  position: fixed; /* Mantén el sidebar fijo en el lado izquierdo */
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-
-
-
-  .profile {
-    text-align: center;
-    margin-top: 90px;
-  }
-}
-
-
 .profile-pic {
   width: 100px;
   height: 100px;
