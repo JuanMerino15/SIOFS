@@ -23,8 +23,10 @@ const Sidebar = () => {
   <ul className="slidebar-nav">
     <li>
       <Link to="/">
+      <div className="menu-item-header">
         <img src="/images/IconoHome.png" alt="Inicio" className="icon" />
         <span>Inicio</span>
+        </div>
       </Link>
     </li>
     <li 
@@ -63,20 +65,26 @@ const Sidebar = () => {
     </li>
     <li>
       <Link to="/EstructuraOFS">
+      <div className="menu-item-header">
         <img src="/images/IconoEstructuraOFS.png" alt="Estructura OFS" className="icon" />
         <span>Estructura OFS</span>
+        </div>
       </Link>
     </li>
     <li>
       <Link to="/Accesos">
+      <div className="menu-item-header">
         <img src="/images/IconoAccesos.png" alt="Accesos" className="icon" />
         <span>Accesos</span>
+        </div>
       </Link>
     </li>
     <li>
       <Link to="/Reportes">
+      <div className="menu-item-header">
         <img src="/images/IconoReportes.png" alt="Reportes" className="icon" />
         <span>Reportes</span>
+        </div>
       </Link>
     </li>
   </ul>
