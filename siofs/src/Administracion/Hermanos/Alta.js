@@ -17,7 +17,7 @@ function Alta() {
     casa: '',
     familiaFranciscana: '',
     codigoPostal: '', // Campo de código postal ahora es lista desplegable
-    asentamiento: '',  // Campo de asentamiento ya no es lista desplegable
+    asentamiento: '',  
     municipio: '',
     entidad: '',
     pais: '',
@@ -167,17 +167,34 @@ function Alta() {
             <div className="AltaFormField">
               <label>Código Postal:</label>
               <Select
-                name="codigoPostal"
-                value={{ label: formData.codigoPostal, value: formData.codigoPostal }}
-                onChange={handleSelectChange('codigoPostal')}
-                options={[
-                  { value: '1000', label: '1000' },
-                  { value: '2000', label: '2000' },
-                  { value: '3000', label: '3000' },
-                  // Agrega más códigos postales según sea necesario
-                ]}
-                placeholder="Selecciona un código postal"
-              />
+  name="codigoPostal"
+  value={{ label: formData.codigoPostal, value: formData.codigoPostal }}
+  onChange={handleSelectChange('codigoPostal')}
+  options={[
+    { value: '1000', label: '1000' },
+    { value: '2000', label: '2000' },
+    { value: '3000', label: '3000' },
+  ]}
+  placeholder="Selecciona un código postal"
+  styles={{
+    control: (provided) => ({
+      ...provided,
+      width: '95%',            // Ajusta el ancho para que coincida con los otros inputs
+      height: '40px',          // Ajusta la altura para que sea similar
+      borderRadius: '54px',    // Misma medida que los otros campos
+      border: '1px solid #ccc',
+      padding: '0 8px',       // Reduce el padding para que no se vea tan alto
+      backgroundColor: '#FFFEFB',
+    }),
+    valueContainer: (provided) => ({
+      ...provided,
+      padding: '0',            // Ajusta el padding interno para mantener consistencia
+    })
+    
+  }}
+/>
+
+
             </div>
 
             <div className="AltaFormField">

@@ -95,11 +95,10 @@ nav ul li a {
 }
 
 .TableContainer th {
-  background-color: #74B22C; /* Color más llamativo para la cabecera */
-  color: white;
+  background-color: #F3F0EF;
+  color: #4D1F0F;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .TableContainer tbody tr:nth-child(even) {
@@ -127,6 +126,8 @@ nav ul li a {
 }
 .table {
   margin-bottom: 600px;
+  border-radius: 8px; /* Esquinas redondeadas */
+  overflow: hidden; /* Asegura que las esquinas queden redondeadas */
 
 }
 .capture-button {

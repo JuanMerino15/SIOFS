@@ -3,6 +3,15 @@ h2 {
   font-weight: 600; /* Semibold */
 }
 
+/* Aplica el estilo a los campos en sí */
+input,
+textarea {
+  font-family: 'Jost', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+ 
+
 .AltaFormContainer,
 .DireccionFormContainer {
   width: 100%;
@@ -15,6 +24,7 @@ h2 {
   align-items: left;
 }
 
+
 .FormContainerWrapper {
   display: flex;
   justify-content: center; /* Coloca ambos contenedores al inicio */
@@ -26,7 +36,7 @@ h2 {
 .AltaFormGrid,
 .DireccionFormGrid {
   display: grid;
-  grid-template-columns: 1.4fr 1.1fr; /* Dos columnas */
+  grid-template-columns: 1.0fr 1.0fr; /* Dos columnas */
   width: 100%;
 }
 
@@ -51,7 +61,7 @@ h2 {
 .DireccionFormField input,
 .DireccionFormField textarea { /* También para la dirección */
     width: 95%; /* Ajusta el ancho de los campos de texto */
-    padding: 10px;
+    padding: 8px;
     background-color: #FFFEFB;
     border: 1px solid #ccc;
     border-radius: 54px;

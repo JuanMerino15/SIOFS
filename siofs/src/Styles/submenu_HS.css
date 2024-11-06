@@ -75,6 +75,8 @@ body {
   width: 100%;
   border-collapse: collapse;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Esquinas redondeadas */
+  overflow: hidden; /* Asegura que las esquinas queden redondeadas */
 }
 
 .submenuhs-table-container th,
@@ -86,11 +88,10 @@ body {
 }
 
 .submenuhs-table-container th {
-  background-color: #74B22C;
-  color: white;
+  background-color: #F3F0EF;
+  color: #4D1F0F;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
 
 .submenuhs-table-container tbody tr:nth-child(even) {
@@ -133,7 +134,7 @@ body {
 .submenuhs-search-button {
   padding: 7px 20px;
   background-color: transparent;
-  color: #454545;
+  color: #000000;
   border: 1px solid #7C4835;
   border-radius: 0 8px 8px 0;
   cursor: pointer;
@@ -154,7 +155,7 @@ body {
   padding: 7px 20px;
   margin-left: 10px;
   background-color: transparent;
-  color: #454545;
+  color: #000000;
   border: 1px solid #7C4835;
   border-radius: 8px;
   cursor: pointer;
@@ -201,8 +202,8 @@ body {
   cursor: pointer;
   border-radius: 4px;
   transition-duration: 0.4s;
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 24px;
   display: block;
 }
 
