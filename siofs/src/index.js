@@ -8,6 +8,7 @@ import reportWebVitals from './reportWebVitals';
 import DatosEtapas from './Administracion/Hermanos/DatosEtapas';
 import Alta from './Administracion/Hermanos/Alta';
 import Edicion from './Administracion/Hermanos/Edicion';
+import Login from './login';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/Administracion/Hermanos/Historial_Etapa" element={<HistorialEtapas />} />
         <Route path="/Administracion/Hermanos/submenuHS" element={<SubmenuHS />} />
         <Route path="/Administracion/Hermanos/HistorialEtapa" element={<HistorialEtapas />} />
