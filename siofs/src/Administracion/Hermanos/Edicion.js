@@ -1,10 +1,10 @@
-import '../../Styles/Alta.css';
+import '../../Styles/Edicion.css';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from '../../Sidebar';
 import Select from 'react-select';
 
-function Alta() {
+function Edicion() {
   const navigate = useNavigate();
   const [formData, setFormData] = useState({
     nombres: '',
@@ -58,7 +58,7 @@ function Alta() {
   };
 
   return (
-    <div className="AltaPage">
+    <div className="EdicionHSPage">
       <Sidebar />
       <main className="content1">
         <header className="header">
@@ -70,10 +70,10 @@ function Alta() {
       </main>
 
       <div className="FormContainerWrapper">
-        <main className="AltaFormContainer">
+        <main className="EdicionHSFormContainer">
           <h2>DATOS PERSONALES</h2>
-          <form onSubmit={handleSubmit} className="AltaFormGrid">
-            <div className="AltaFormField">
+          <form onSubmit={handleSubmit} className="EdicionHSFormGrid">
+            <div className="EdicionHSFormField">
               <label>Nombre(s):</label>
               <input
                 type="text"
@@ -83,7 +83,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Estado Civil:</label>
               <input
                 type="text"
@@ -93,7 +93,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Apellido Paterno:</label>
               <input
                 type="text"
@@ -103,7 +103,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Apellido Materno:</label>
               <input
                 type="text"
@@ -113,7 +113,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Fecha de Nacimiento:</label>
               <input
                 type="date"
@@ -123,7 +123,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Lugar de Nacimiento:</label>
               <input
                 type="text"
@@ -133,7 +133,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Número de Celular:</label>
               <input
                 type="text"
@@ -143,7 +143,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Número de Casa:</label>
               <input
                 type="text"
@@ -153,7 +153,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Familia Franciscana:</label>
               <input
                 type="text"
@@ -165,26 +165,40 @@ function Alta() {
           </form>
         </main>
 
-        <main className="DireccionFormContainer">
+        <main className="DireccionEdicHSContainer">
           <h2>DIRECCIÓN</h2>
-          <form className="DireccionFormGrid">
-            <div className="AltaFormField">
+          <form className="DireccionEdicHSGrid">
+            <div className="EdicionHSFormField">
               <label>Código Postal:</label>
               <Select
                 name="codigoPostal"
                 value={{ label: formData.codigoPostal, value: formData.codigoPostal }}
                 onChange={handleSelectChange('codigoPostal')}
                 options={[
-                  { value: '1000', label: '1000' },
-                  { value: '2000', label: '2000' },
-                  { value: '3000', label: '3000' },
-                  // Agrega más códigos postales según sea necesario
+                { value: '1000', label: '1000' },
+                { value: '2000', label: '2000' },
+                { value: '3000', label: '3000' },
                 ]}
                 placeholder="Selecciona un código postal"
-              />
+                styles={{
+                control: (provided) => ({
+                 ...provided,
+                width: '95%',           // Ajusta la altura para que sea similar
+                borderRadius: '54px',    // Misma medida que los otros campos
+                border: '1px solid #ccc',
+                padding: '0px',       // Reduce el padding para que no se vea tan alto
+                backgroundColor: '#FFFEFB',
+                }),
+                valueContainer: (provided) => ({
+                 ...provided,
+          padding: '0',            // Ajusta el padding interno para mantener consistencia
+    })
+    
+  }}
+/>
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Asentamiento:</label>
               <input
                 type="text"
@@ -194,7 +208,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Municipio:</label>
               <input
                 type="text"
@@ -204,7 +218,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Entidad:</label>
               <input
                 type="text"
@@ -214,7 +228,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>País:</label>
               <input
                 type="text"
@@ -224,7 +238,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Calle:</label>
               <input
                 type="text"
@@ -234,7 +248,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Número Interior:</label>
               <input
                 type="text"
@@ -244,7 +258,7 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
+            <div className="EdicionHSFormField">
               <label>Número Exterior:</label>
               <input
                 type="text"
@@ -253,22 +267,21 @@ function Alta() {
                 onChange={handleChange}
               />
             </div>
-
-            <div className="AltaFormField">
-              <label>Referencias:</label>
-              <textarea
-                name="referencias"
-                value={formData.referencias}
-                onChange={handleChange}
-              />
+            <div className="EdicionHSFormField full-width">
+            <label>Referencias:</label>
+            <textarea
+              name="referencias"
+              value={formData.referencias}
+              onChange={handleChange}
+            />
             </div>
           </form>
         </main>
       </div>
 
-      <div className="AltaSubmitButtonContainer">
-        <button type="button" className="AltaHistorialButton" onClick={handleHistorial}>
-          HISTORIAL
+      <div className="EdicionHSButtonContainer">
+        <button type="button" className="HistorialButton" onClick={handleHistorial}>
+          Historial
         </button>
         <button type="button" className="AltaSubmitButton" onClick={handleSubmit}>
           Guardar
@@ -281,4 +294,4 @@ function Alta() {
   );
 }
 
-export default Alta;
+export default Edicion;

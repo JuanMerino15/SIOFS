@@ -56,8 +56,23 @@ textarea {
   margin-left: 10px;
 }
 
-.AltaFormField input,
-.AltaFormField textarea, /* Añadido para aplicar el mismo estilo a textarea */
+
+.AltaFormField textarea{
+  width: 95%; /* Ajusta el ancho de los campos de texto */
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    
+}
+.AltaFormField.full-width {
+  width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
+  grid-column: span 2; /* Si estás usando CSS Grid para dividir en columnas */
+}
+.AltaFormField.full-width textarea {
+  width: 98%; /* Ancho completo dentro del contenedor */
+}
+
+.AltaFormField input, /* Añadido para aplicar el mismo estilo a textarea */
 .DireccionFormField input,
 .DireccionFormField textarea { /* También para la dirección */
     width: 95%; /* Ajusta el ancho de los campos de texto */
@@ -77,17 +92,7 @@ textarea {
   margin-left: 220px;
 }
 
-/* Botón Historial */
-.AltaHistorialButton {
-  background-color: #007BFF; /* Color azul para el botón Historial */
-  color: white;
-  border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  font-size: 18px;
-  cursor: pointer;
-  font-family: 'Jost', sans-serif;
-}
+
 
 .AltaSubmitButton {
   background-color: #74B22C;
@@ -113,7 +118,6 @@ textarea {
 
 /* Hover effect para los botones */
 .AltaSubmitButton:hover,
-.AltaCancelButton:hover,
-.AltaHistorialButton:hover {
-  opacity: 0.9;
+.AltaCancelButton:hover {
+  opacity: 0.7;
 }

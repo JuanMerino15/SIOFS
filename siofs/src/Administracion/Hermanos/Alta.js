@@ -267,13 +267,13 @@ function Alta() {
               />
             </div>
 
-            <div className="AltaFormField">
-              <label>Referencias:</label>
-              <textarea
-                name="referencias"
-                value={formData.referencias}
-                onChange={handleChange}
-              />
+            <div className="AltaFormField full-width">
+            <label>Referencias:</label>
+            <textarea
+              name="referencias"
+              value={formData.referencias}
+              onChange={handleChange}
+            />
             </div>
           </form>
         </main>

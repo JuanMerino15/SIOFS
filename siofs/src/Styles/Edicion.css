@@ -1,0 +1,134 @@
+h2 {
+    font-size: 16px; /* Tamaño de fuente */
+    font-weight: 600; /* Semibold */
+  }
+  
+  /* Aplica el estilo a los campos en sí */
+  input,
+  textarea {
+    font-family: 'Jost', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+  }
+   
+  
+  .EdicionHSFormContainer,
+  .DireccionEdicHSContainer {
+    width: 100%;
+    max-width: 560px;
+    padding: 10px 30px 15px 20px; /* Reduce el padding superior */
+    background-color: #F3F0EF;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+  }
+  
+  
+  .FormContainerWrapper {
+    display: flex;
+    justify-content: center; /* Coloca ambos contenedores al inicio */
+    padding: 0; /* Elimina el padding superior e inferior */
+    margin-left: 210px; /* Separación del sidebar */
+    gap: 100px; /* Espacio entre los contenedores */
+  }
+  
+  .EdicionHSFormGrid,
+  .DireccionEdicHSGrid {
+    display: grid;
+    grid-template-columns: 1.0fr 1.0fr; /* Dos columnas */
+    width: 100%;
+  }
+  
+  .EdicionHSFormField:nth-child(even),
+  .DireccionFormField:nth-child(even) {
+    padding-left: 50px; /* Espacio a la izquierda */
+  }
+  
+  .EdicionHSFormField label,
+  .DireccionFormField label {
+    font-family: 'Jost', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 0px;
+    display: block;
+    margin-left: 10px;
+  }
+  
+  
+  .EdicionHSFormField textarea{
+    width: 95%; /* Ajusta el ancho de los campos de texto */
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 30px;
+      
+  }
+  .EdicionHSFormField.full-width {
+    width: 100%; /* Asegura que ocupe el ancho completo del contenedor */
+    grid-column: span 2; /* Si estás usando CSS Grid para dividir en columnas */
+  }
+  .EdicionHSFormField.full-width textarea {
+    width: 98%; /* Ancho completo dentro del contenedor */
+  }
+  
+  .EdicionHSFormField input, /* Añadido para aplicar el mismo estilo a textarea */
+  .DireccionFormField input,
+  .DireccionFormField textarea { /* También para la dirección */
+      width: 95%; /* Ajusta el ancho de los campos de texto */
+      padding: 8px;
+      background-color: #FFFEFB;
+      border: 1px solid #ccc;
+      border-radius: 54px;
+      margin-bottom: 7px;
+  }
+  
+  /* Contenedor para los botones */
+  .EdicionHSButtonContainer {
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px;
+    margin-left: 220px;
+  }
+  
+  /* Botón Historial */
+.HistorialButton {
+    background-color: #4D1F0F; /* Color azul para el botón Historial */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .AltaSubmitButton {
+    background-color: #74B22C;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  .AltaCancelButton {
+    background-color: #4D1F0F;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: 'Jost', sans-serif;
+  }
+  
+  /* Hover effect para los botones */
+  .HistorialButton:hover,
+  .AltaSubmitButton:hover,
+  .AltaCancelButton:hover {
+    opacity: 0.7;
+  }
