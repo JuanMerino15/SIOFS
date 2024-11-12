@@ -131,34 +131,24 @@ nav ul li a {
 
 }
 .capture-button {
+  border: none;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px 16px;
-  gap: 8px;
+  padding: 0px 0px;
   cursor: pointer;
+  font-size: 18px;
+  font-family: 'Jost', sans-serif;
 
   position: absolute;
-  width: 220px;
+  width: 180px;
   height: 50px;
-  right: 460px;
+  right: 700px;
   top: 400px; /* mover el botón hacia arriba */
 
   background: #74B22C;
   border-radius: 20px;
-
-  width: 195px;
-  height: 36px;
-
-  font-family: 'Jost';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 150%;
-  display: flex;
-  align-items: center;
-
   color: #FFFFFF;
 }
 .icon {
