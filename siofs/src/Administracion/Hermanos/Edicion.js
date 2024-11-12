@@ -277,6 +277,40 @@ function Edicion() {
             </div>
           </form>
         </main>
+        <main className="ApostoladoEdicHSContainer">
+          <h2>APOSTOLADO</h2>
+          <form className="ApostoladoEdicHSGrid">
+            <div className="EdicionHSFormField">
+              <label>Tipo de Apostolado:</label>
+              <input
+                type="text"
+                name="tipoApostolado"
+                value={formData.tipoApostolado}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="EdicionHSFormField">
+              <label>Nombre de Apostolado:</label>
+              <input
+                type="text"
+                name="nombreApostolado"
+                value={formData.nombreApostolado}
+                onChange={handleChange}
+              />
+            </div>
+
+            <div className="EdicionHSFormField">
+              <label>Fecha de Inicio del Apostolado:</label>
+              <input
+                type="date"
+                name="fechaInicioApostolado"
+                value={formData.fechaInicioApostolado}
+                onChange={handleChange}
+              />
+            </div>
+          </form>
+        </main>
       </div>
 
       <div className="EdicionHSButtonContainer">

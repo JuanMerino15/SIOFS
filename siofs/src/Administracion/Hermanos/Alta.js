@@ -179,11 +179,10 @@ function Alta() {
   styles={{
     control: (provided) => ({
       ...provided,
-      width: '95%',            // Ajusta el ancho para que coincida con los otros inputs
-      height: '40px',          // Ajusta la altura para que sea similar
+      width: '95%',          
       borderRadius: '54px',    // Misma medida que los otros campos
       border: '1px solid #ccc',
-      padding: '0 8px',       // Reduce el padding para que no se vea tan alto
+      padding: '0px',       // Reduce el padding para que no se vea tan alto
       backgroundColor: '#FFFEFB',
     }),
     valueContainer: (provided) => ({

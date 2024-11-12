@@ -26,11 +26,12 @@ textarea {
 
 
 .FormContainerWrapper {
-  display: flex;
-  justify-content: center; /* Coloca ambos contenedores al inicio */
-  padding: 0; /* Elimina el padding superior e inferior */
-  margin-left: 210px; /* Separación del sidebar */
-  gap: 100px; /* Espacio entre los contenedores */
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Dos columnas para el acomodo en filas de dos contenedores */
+  gap: 30px; /* Espacio entre los contenedores */
+  padding: 0;
+  margin-left: 490px;
+  margin-right: 200px;
 }
 
 .AltaFormGrid,
@@ -59,7 +60,7 @@ textarea {
 
 .AltaFormField textarea{
   width: 95%; /* Ajusta el ancho de los campos de texto */
-    padding: 15px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 30px;
     
