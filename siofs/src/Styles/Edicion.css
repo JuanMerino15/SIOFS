@@ -129,9 +129,22 @@ textarea {
   background-color: #4D1F0F;
 }
 
-/* Hover effect para los botones */
-.HistorialButton:hover,
-.AltaSubmitButton:hover,
+.HistorialButton:hover{
+  background-color: #4D1F0F;
+}
+
+.AltaSubmitButton:hover{
+  background-color: #286700;
+}
 .AltaCancelButton:hover {
-  opacity: 0.7;
+  background-color: #33150b;
+}
+
+
+.logo {
+  position: absolute;
+  right: 20px;  
+  top: 20px;
+  width: 100px;
+  height: auto;
 }

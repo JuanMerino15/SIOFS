@@ -18,6 +18,7 @@ function HistorialEtapas() {
         <header className="header">
         <div className="title">
             <h1>ADMINISTRACIÓN</h1>
+            <img src="/images/logo.png" alt="Logo" className="logo" />
             <h2>HERMANOS SEGLARES / HISTORIAL ETAPA FORMATIVA</h2>
           </div>
         </header>

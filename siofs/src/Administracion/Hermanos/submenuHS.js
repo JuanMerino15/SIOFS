@@ -18,6 +18,7 @@ function Submenuhs() {
         <header className="submenuhs-header">
           <div className="submenuhs-title">
             <h1>ADMINISTRACIÓN</h1>
+            <img src="/images/logo.png" alt="Logo" className="logo" />
             <h2>HERMANOS SEGLARES</h2>
           </div>
         </header>

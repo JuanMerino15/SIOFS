@@ -64,6 +64,7 @@ function Edicion() {
         <header className="header">
           <div className="title">
             <h1>ADMINISTRACIÓN</h1>
+            <img src="/images/logo.png" alt="Logo" className="logo" />
             <h2>HERMANOS SEGLARES / EDICION</h2>
           </div>
         </header>

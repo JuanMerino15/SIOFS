@@ -24,7 +24,7 @@ const Datos_Etapas = () => {
             <div className="row">
               <div className="col">
                 <label htmlFor="imposicion1">Imposición 1a Etapa</label>
-                <div className="input-group">
+                <div className="input-group-DE">
                   <input type="text" id="imposicion1" />
                   <img src="/images/IconoCalendario.png" alt="Calendario" className="calendar-icon" />
                   <img src="/images/check.png" alt="Check" className="check-icon" />
@@ -32,7 +32,7 @@ const Datos_Etapas = () => {
               </div>
               <div className="col">
                 <label htmlFor="profesionTemporal">Profesión Temporal</label>
-                <div className="input-group">
+                <div className="input-group-DE">
                   <input type="text" id="profesionTemporal" />
                   <img src="/images/IconoCalendario.png" alt="Calendario" className="calendar-icon" />
                   <img src="/images/check.png" alt="Check" className="check-icon" />
@@ -40,7 +40,7 @@ const Datos_Etapas = () => {
               </div>
               <div className="col">
                 <label htmlFor="profesionPerpetua">Profesión Perpetua</label>
-                <div className="input-group">
+                <div className="input-group-DE">
                   <input type="text" id="profesionPerpetua" />
                   
                 </div>
@@ -49,7 +49,7 @@ const Datos_Etapas = () => {
             <div className="row">
               <div className="col">
                 <label htmlFor="imposicion2">Imposición 2a Etapa</label>
-                <div className="input-group">
+                <div className="input-group-DE">
                   <input type="text" id="imposicion2" />
                   <img src="/images/IconoCalendario.png" alt="Calendario" className="calendar-icon" />
                   <img src="/images/check.png" alt="Check" className="check-icon" />
@@ -57,7 +57,7 @@ const Datos_Etapas = () => {
               </div>
               <div className="col">
                 <label htmlFor="formacion">Formación como neoprofeso(a)</label>
-                <div className="input-group">
+                <div className="input-group-DE">
                   <input type="text" id="formacion" />
                 </div>
               </div>
@@ -66,8 +66,8 @@ const Datos_Etapas = () => {
         </div>
 
         <div className="buttons">
-          <button className="guardar">GUARDAR</button>
-          <button className="cancelar">CANCELAR</button>
+          <button className="guardar">Guardar</button>
+          <button className="cancelar">Cancelar</button>
         </div>
       </main>
     </div>

@@ -40,22 +40,6 @@ nav ul li a {
   color: #000000;  /* Cambia el color del texto a rojo */
 }
 
-.logout {
-  margin-bottom: 80px;
-  height: 27px;
-  left: 136px;
-  top: 892px;
-  color: #000000;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.logout a {
-  text-decoration: none; 
-}
-
-.logout a:hover {
-  color: darkred; 
-}
 
 /* Content styles */
 .content2 {
@@ -146,8 +130,8 @@ nav ul li a {
   margin-bottom: 5px;
 }
 
-/* Modificación de input-group */
-.input-group {
+/* Modificación de input-group-DE */
+.input-group-DE {
   position: relative;
   display: flex;
   align-items: center;
@@ -155,7 +139,7 @@ nav ul li a {
 }
 
 /* Estilo para los inputs */
-.input-group input {
+.input-group-DE input {
   width: 100%;
   padding-right: 50px; /* Espacio para el icono del calendario */
   border: 1px solid #ccc;
@@ -185,28 +169,45 @@ nav ul li a {
 }
 
 .buttons {
-  display: flex;
-  justify-content: center;
-  margin-top: 60px;
+ 
+    display: flex;
+    justify-content: center; /* Centra los botones horizontalmente */
+    gap: 20px; /* Espacio entre los botones */
+    margin-top: 20px;
+    margin-left: 220px;
+  
   margin-left: 450px;
-  width: 155px;
-  height: 50px;
+  
 }
 
-.buttons button {
-  padding: 10px 40px;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-  margin-right: 20px;
-}
+
 
 .guardar {
   background-color: #74B22C;
   color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
 }
 
 .cancelar {
-  background-color: #4C4B4B;
+  background-color: #4D1F0F;
   color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  font-family: 'Jost', sans-serif;
+}
+
+.guardar:hover{
+  background-color: #286700;
+}
+
+.cancelar:hover{
+  background-color: #33150b;
 }

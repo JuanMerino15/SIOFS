@@ -57,6 +57,7 @@ const Sidebar = () => {
       </div>
       {activeMenu === 'economia' && (
         <ul className="submenu">
+          <li><Link to="/Economia/Aportaciones/InicioAportacion">Aportaciones</Link></li>
           <li><Link to="/Economia/Finanzas">Finanzas</Link></li>
           <li><Link to="/Economia/Presupuestos">Presupuestos</Link></li>
           <li><Link to="/Economia/BalanceGeneral">Balance General</Link></li>
