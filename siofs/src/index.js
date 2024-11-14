@@ -9,7 +9,7 @@ import DatosEtapas from './Administracion/Hermanos/DatosEtapas';
 import Alta from './Administracion/Hermanos/Alta';
 import Edicion from './Administracion/Hermanos/Edicion';
 import Login from './login';
-import Aportacion from './Economia/Aportaciones/InicioAportacion';
+import InicioAportacion from './Economia/Aportaciones/InicioAportacion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,7 +25,7 @@ root.render(
         <Route path="/Administracion/Hermanos/DatosEtapas" element={<DatosEtapas />} />
         <Route path="/Administracion/Hermanos/Alta" element={<Alta />} />
         <Route path="/Administracion/Hermanos/Edicion" element={<Edicion />} />
-        <Route path="./Economia/Aportaciones/InicioAportacion" element={<Aportacion />} />
+        <Route path="/Economia/Aportaciones/InicioAportacion" element={<InicioAportacion/>} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
